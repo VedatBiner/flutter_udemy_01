@@ -5,3 +5,5 @@ Eğitiminden bir scaffold örneği
 iconButton ve BottomNavigationBar Widget 'ları denendi.
 <BR>
 ![ScreenShot](/screen_shots/img-01.png)
+![ScreenShot](/screen_shots/img-02.png)
+![ScreenShot](/screen_shots/img-03.png)
