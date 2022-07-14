@@ -14,3 +14,5 @@ Sayı 0 dan büyük olunca farklı renk, küçük olunca farklı renk görünüy
 <BR>
 ![ScreenShot](/screen_shots/img-04.png)
 ![ScreenShot](/screen_shots/img-05.png)
+
+<BR> Navigasyon eklendi
