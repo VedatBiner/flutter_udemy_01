@@ -21,7 +21,7 @@ class ScaffoldOgesi extends StatelessWidget{
           IconButton(
             icon: const Icon(Icons.playlist_add_check),
             tooltip: "Repair it",
-            onPressed: () => () => print("Repair it"),
+            onPressed: () => print("Repair it"),
           ),
         ],
       ),

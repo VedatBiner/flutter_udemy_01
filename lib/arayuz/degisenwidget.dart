@@ -52,7 +52,7 @@ class MyPageState extends State<HomePage>{
               textDirection: TextDirection.ltr,
               style: TextStyle(
                 fontSize: 20.0,
-                color: degisenSayi > 0 ? Colors.redAccent : Colors.greenAccent
+                color: degisenSayi > 0 ? Colors.green : Colors.red
               ),
             ),
             TextButton(
