@@ -36,15 +36,25 @@ class ScaffoldOgesi extends StatelessWidget{
               GestureDetector(
                 onTap: () => Navigator.pushNamed(context, "/ilksayfa"),
                 child: Container(
-                  color: Colors.blue.shade400,
+                  decoration: const BoxDecoration(
+                    image: DecorationImage(
+                      image: NetworkImage("https://storage.googleapis.com/material-design/publish/material_v_11/assets/0Bx4BSt6jniD7T0hfM01sSmRyTG8/layout_structure_regions_mobile.png"),
+                      fit: BoxFit.cover
+                    ),
+                  ),
                   margin: const EdgeInsets.all(5.0),
-                  alignment: Alignment.center,
-                  child: const Text(
-                    """
-                    Tek Tıklama
-                    İlk sayfaya git
-                    """,
-                    textAlign: TextAlign.center,
+                  alignment: Alignment.bottomCenter,
+                  child: Transform(
+                    alignment: Alignment.bottomCenter,
+                    transform: Matrix4.skewY(0.0)..rotateZ(0.0),
+                    child: Container(
+                      padding: const EdgeInsets.all(8.0),
+                      color: const Color(0xCDFFFFDD), // CD değeri transparanlık
+                      child: const Text(
+                        "Tek Tıklama \n İlk sayfaya git",
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
                   ),
                 ),
               ),
