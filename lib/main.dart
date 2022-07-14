@@ -1,10 +1,10 @@
 import "package:flutter/material.dart";
-import 'arayuz/scaf.dart';
+import 'arayuz/degisenwidget.dart';
 
 void main(){
-  runApp(MaterialApp(
+  runApp(const MaterialApp(
     title: "Merhaba",
-    home: ScaffoldOgesi(),
+    home: DegisenWidget(),
   ),
   );
 }

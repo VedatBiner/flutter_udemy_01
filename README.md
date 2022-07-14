@@ -7,3 +7,10 @@ iconButton ve BottomNavigationBar Widget 'ları denendi.
 ![ScreenShot](/screen_shots/img-01.png)
 ![ScreenShot](/screen_shots/img-02.png)
 ![ScreenShot](/screen_shots/img-03.png)
+<BR>
+
+StatefulWidget örneği farklı bir branch olarak eklendi.  
+Sayı 0 dan büyük olunca farklı renk, küçük olunca farklı renk görünüyor.
+<BR>
+![ScreenShot](/screen_shots/img-04.png)
+![ScreenShot](/screen_shots/img-05.png)
