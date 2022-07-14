@@ -2,6 +2,7 @@ import "package:flutter/material.dart";
 import 'package:flutter_udemy_01/arayuz/ilksayfa.dart';
 import 'package:flutter_udemy_01/arayuz/scaf.dart';
 import 'arayuz/degisenwidget.dart';
+import 'arayuz/hello.dart';
 
 void main(){
   runApp(MaterialApp(
@@ -9,7 +10,9 @@ void main(){
     routes: {
       "/": (context) => ScaffoldOgesi(),
       "/ilksayfa": (context) => IlkSayfa(),
-      "/degisenwidget": (context) => DegisenWidget()
+      "/degisenwidget": (context) => DegisenWidget(),
+      "/hello": (context) => Hello(),
+
     },
   ),
   );

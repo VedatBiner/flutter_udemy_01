@@ -1,25 +1,11 @@
 import "package:flutter/material.dart";
 
-class DegisenWidget extends StatelessWidget{
-  const DegisenWidget({Key? key}) : super(key: key);
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: "Stateful Konusu",
-      theme: ThemeData(
-        primaryColor: Colors.blue
-      ),
-      home: HomePage(),
-    );
-  }
-}
-
-class HomePage extends StatefulWidget{
+class DegisenWidget extends StatefulWidget{
   @override
   State<StatefulWidget> createState() => MyPageState();
 }
 
-class MyPageState extends State<HomePage>{
+class MyPageState extends State<DegisenWidget>{
   int degisenSayi = 0;
   void sayiyiArtir(){
     setState((){
@@ -44,8 +30,12 @@ class MyPageState extends State<HomePage>{
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             TextButton(
-                onPressed: sayiyiArtir,
-                child: const Text("Sayıyı Arttır"),
+              style: TextButton.styleFrom(
+                primary: Colors.green,
+                backgroundColor: Colors.amberAccent
+              ),
+              onPressed: sayiyiArtir,
+              child: const Text("Sayıyı Arttır"),
             ),
             Text(
               "Değişebilen Sayı : $degisenSayi",
@@ -56,6 +46,10 @@ class MyPageState extends State<HomePage>{
               ),
             ),
             TextButton(
+              style: TextButton.styleFrom(
+                primary: Colors.red,
+                backgroundColor: Colors.amberAccent
+              ),
               onPressed: sayiyiAzalt,
               child: const Text("Sayıyı Azalt"),
             ),
