@@ -11,17 +11,17 @@ class ScaffoldOgesi extends StatelessWidget{
           IconButton(
             icon: const Icon(Icons.playlist_play),
             tooltip: "Air it",
-            onPressed: () => print("Air it"),
+            onPressed: () => Navigator.pushNamed(context, "/ilksayfa"),
           ),
           IconButton(
             icon: const Icon(Icons.playlist_add),
             tooltip: "Restrict it",
-            onPressed: () => print("Restrict it"),
+            onPressed: () => Navigator.pushNamed(context, "/degisenwidget"),
           ),
           IconButton(
             icon: const Icon(Icons.playlist_add_check),
             tooltip: "Repair it",
-            onPressed: () => print("Repair it"),
+            onPressed: () => () => print("Repair it"),
           ),
         ],
       ),
