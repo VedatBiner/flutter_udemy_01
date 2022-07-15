@@ -1,6 +1,6 @@
 # flutter_udemy01
 https://www.udemy.com/course/google-flutter-ve-dart-programlama-dili-temel-egitimi/learn/lecture/12128622#reviews
-Eğitiminden bir scaffold örneği
+Eğitiminden örnekler. Her birini farklı branch olacak şekilde düzenledim.
 
 iconButton ve BottomNavigationBar Widget 'ları denendi.
 <BR>
