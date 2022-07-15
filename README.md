@@ -32,3 +32,4 @@ GridView arka plana assets klasöründen resim ekleme,
 Resim altına transparan bant ile koyu yazı ekleme
 <BR>
 ![ScreenShot](/screen_shots/img-07.png)
+
