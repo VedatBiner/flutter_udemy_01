@@ -18,7 +18,7 @@ class ImageViews extends StatelessWidget{
             textAlign: TextAlign.center,
           ),
           FadeInImage.assetNetwork(
-            placeholder: "aasets/images/loading1.gif",
+            placeholder: "assets/images/loading1.gif",
             image: "https://images.pexels.com/photos/3586966/pexels-photo-3586966.jpeg",
           ),
           const Text(
@@ -39,8 +39,6 @@ class ImageViews extends StatelessWidget{
             textAlign: TextAlign.center,
           ),
           Image.network("https://storage.googleapis.com/material-design/publish/material_v_11/assets/0Bx4BSt6jniD7T0hfM01sSmRyTG8/layout_structure_regions_mobile.png"),
-
-
         ],
       ),
     );
