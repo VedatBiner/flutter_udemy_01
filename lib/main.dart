@@ -1,4 +1,5 @@
 import "package:flutter/material.dart";
+import 'package:flutter_udemy_01/arayuz/alervetext.dart';
 import 'package:flutter_udemy_01/arayuz/ilksayfa.dart';
 import 'package:flutter_udemy_01/arayuz/imageviews.dart';
 import 'package:flutter_udemy_01/arayuz/scaf.dart';
@@ -14,6 +15,7 @@ void main(){
       "/degisenwidget": (context) => DegisenWidget(),
       "/hello": (context) => Hello(),
       "/imageviews": (context) => ImageViews(),
+      "/alertvetextfield": (context) => AlertVeTextField(),
 
     },
   ),

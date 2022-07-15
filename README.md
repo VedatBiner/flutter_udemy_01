@@ -46,3 +46,17 @@ Burada üç farklı noktada toast mesajı görülüyor.
 ![ScreenShot](/screen_shots/img-11-toast.png)
 ![ScreenShot](/screen_shots/img-12-toast2.png)
 ![ScreenShot](/screen_shots/img-13-toast3.png)
+
+<BR>
+TextField ve alertMessage örneği
+![ScreenShot](/screen_shots/img-14-textfield1.png)
+![ScreenShot](/screen_shots/img-15-textfield2.png)
+<BR>
+Boş bırakırsak aşağıdaki mesaj çıkacak
+<BR>
+![ScreenShot](/screen_shots/img-16-textfield3.png)
+<BR>
+Bir isim yazıp devam edersek, aşağıdaki selmalama kutusu çıkacak
+![ScreenShot](/screen_shots/img-17-alertdialog.png)
+
+
