@@ -1,4 +1,5 @@
 import "package:flutter/material.dart";
+import 'package:fluttertoast/fluttertoast.dart';
 
 class ScaffoldOgesi extends StatelessWidget{
   @override
@@ -94,23 +95,86 @@ class ScaffoldOgesi extends StatelessWidget{
               GestureDetector(
                 onLongPress: () => Navigator.pushNamed(context, "/degisenwidget"),
                 child: Container(
-                  color: Colors.blue.shade400,
+                  decoration: const BoxDecoration(
+                    image: DecorationImage(
+                        image: NetworkImage("https://blog.logrocket.com/wp-content/uploads/2018/08/long-press-directive-vue.png"),
+                        fit: BoxFit.cover
+                    ),
+                  ),
                   margin: const EdgeInsets.all(5.0),
-                  alignment: Alignment.center,
-                  child: const Text(
-                    """
-                    Uzun Basma
-                    Değişebilen Widget sayfasına git
-                    """,
-                    textAlign: TextAlign.center,
+                  alignment: Alignment.bottomCenter,
+                  child: Transform(
+                    alignment: Alignment.bottomCenter,
+                    transform: Matrix4.skewY(0.0)..rotateZ(0.0),
+                    child: Container(
+                      width: double.infinity, //sonsuz kaplama
+                      padding: const EdgeInsets.all(8.0),
+                      color: const Color(0xCDFFFFDD), // CD değeri transparanlık
+                      child: const Text(
+                        "Uzun basma ile \n değişebilen widget sayfasına git",
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold, // Bold font
+                        ),
+                      ),
+                    ),
                   ),
                 ),
               ),
-              Container(
-                color: Colors.blue.shade400,
-                margin: const EdgeInsets.all(5.0),
-                alignment: Alignment.center,
-                child: const Text("Grid Elemanı-04", textAlign: TextAlign.center,),
+              GestureDetector(
+                onTap: () {
+                  Fluttertoast.showToast(
+                    msg: "Bu ögeye \n bir defa \n tıkladınız!!!",
+                    toastLength: Toast.LENGTH_LONG,
+                    gravity: ToastGravity.BOTTOM,
+                    backgroundColor: Colors.yellowAccent,
+                    textColor: Colors.indigo,
+                  );
+                },
+                onDoubleTap: () {
+                  Fluttertoast.showToast(
+                    msg: "Bu ögeye \n iki defa \n tıkladınız!!!",
+                    toastLength: Toast.LENGTH_LONG,
+                    gravity: ToastGravity.CENTER,
+                    backgroundColor: Colors.white,
+                    textColor: Colors.indigo,
+                  );
+                },
+                onLongPress: () {
+                  Fluttertoast.showToast(
+                    msg: "Bu ögeye \n uzun tıkladınız!!!",
+                    toastLength: Toast.LENGTH_LONG,
+                    gravity: ToastGravity.TOP,
+                    backgroundColor: Colors.greenAccent,
+                    textColor: Colors.indigo,
+                  );
+                },
+                child: Container(
+                  decoration: const BoxDecoration(
+                    image: DecorationImage(
+                        image: AssetImage("assets/images/toast1.jpg"),
+                        fit: BoxFit.cover
+                    ),
+                  ),
+                  margin: const EdgeInsets.all(5.0),
+                  alignment: Alignment.bottomCenter,
+                  child: Transform(
+                    alignment: Alignment.bottomCenter,
+                    transform: Matrix4.skewY(0.0)..rotateZ(0.0),
+                    child: Container(
+                      width: double.infinity, //sonsuz kaplama
+                      padding: const EdgeInsets.all(8.0),
+                      color: const Color(0xCDFFFFDD), // CD değeri transparanlık
+                      child: const Text(
+                        "Toast Mesajı \n Örnekleri",
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold, // Bold font
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
               ),
               Container(
                 color: Colors.blue.shade400,

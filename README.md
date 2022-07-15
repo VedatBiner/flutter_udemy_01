@@ -40,3 +40,9 @@ Bir listview içinde internetten, lokalden ve bekletilirken değişen image gös
 ![ScreenShot](/screen_shots/img-08.png)
 ![ScreenShot](/screen_shots/img-09.png)
 ![ScreenShot](/screen_shots/img-10.png)
+<BR>
+Toast mesajı
+Burada üç farklı noktada toast mesajı görülüyor.
+![ScreenShot](/screen_shots/img-11-toast.png)
+![ScreenShot](/screen_shots/img-12-toast2.png)
+![ScreenShot](/screen_shots/img-13-toast3.png)
