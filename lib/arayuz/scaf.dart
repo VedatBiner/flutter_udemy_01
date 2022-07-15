@@ -63,7 +63,7 @@ class ScaffoldOgesi extends StatelessWidget{
                 ),
               ),
               GestureDetector(
-                onDoubleTap: () => Navigator.pushNamed(context, "/hello"),
+                onDoubleTap: () => Navigator.pushNamed(context, "/imageviews"),
                 child: Container(
                   decoration: const BoxDecoration(
                     image: DecorationImage(
@@ -81,7 +81,7 @@ class ScaffoldOgesi extends StatelessWidget{
                       padding: const EdgeInsets.all(8.0),
                       color: const Color(0xCDFFFFDD), // CD değeri transparanlık
                       child: const Text(
-                        "Çift Tıklama \n İlk sayfaya git",
+                        "Çift Tıklama \n ImageViews Sayfasına Git",
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           fontWeight: FontWeight.bold, // Bold font

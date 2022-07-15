@@ -35,3 +35,8 @@ Resim altına transparan bant ile koyu yazı ekleme
 
 ![ScreenShot](/screen_shots/img-07.png)
 
+Bir listview içinde internetten, lokalden ve bekletilirken değişen image gösterimi
+<BR>
+![ScreenShot](/screen_shots/img-08.png)
+![ScreenShot](/screen_shots/img-09.png)
+![ScreenShot](/screen_shots/img-10.png)
