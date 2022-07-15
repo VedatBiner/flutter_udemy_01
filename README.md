@@ -25,11 +25,13 @@ GridView ile birkaç kutu için tek, çift tıklama ve uzun basma uygulandı.
 GridView arka plana internetten alınan resim ekleme,
 Resim altına transparan bant ile yazı ekleme
 <BR>
+
 ![ScreenShot](/screen_shots/img-06.png)
 
 <BR>
 GridView arka plana assets klasöründen resim ekleme,
 Resim altına transparan bant ile koyu yazı ekleme
 <BR>
+
 ![ScreenShot](/screen_shots/img-07.png)
 
