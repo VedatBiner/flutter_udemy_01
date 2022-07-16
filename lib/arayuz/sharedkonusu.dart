@@ -49,6 +49,14 @@ class SharedState extends State<SharedKonusu> {
     String? kIsim = kayitAraci.getString("isim");
     String? kSoyisim = kayitAraci.getString("soyisim");
     setState(() {
+      // null check için işe yarar mı?
+      /*
+      if(kDurum != null){
+        kDurum = true;
+      } else {
+        kDurum = false;
+      }
+       */
       kayitDurumu = kDurum!;
       kayitNo = kNo!;
       isimStr = kIsim!;

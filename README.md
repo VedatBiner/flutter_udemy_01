@@ -90,6 +90,17 @@ Sil Düğmesine basılınca aşağıdaki gibi görünüyor.
 <BR>
 Ancak bu aşamadan sonra getir düğmesine basılırsa kayıt boş gelmesi gerkirken dolu geliyor.
 *** Bir yerde hata var.
-
+<BR>
+Yerel dosya İşlemleri
+Burada telefonda bir dosya oluşturulup, okuma-yazma işlemi yapılıyor.
+<BR>
+![ScreenShot](/screen_shots/img-24-dosyaislemleri-1.png)
+![ScreenShot](/screen_shots/img-25-dosyaislemleri-2.png)
+<BR>
+Kaydet düğmesine basılınca aşağıdaki gibi görünecektir.
+<BR>
+![ScreenShot](/screen_shots/img-26-dosyaislemleri-3.png)
+<BR>
+Bu bölümden çıkılıp, tekrar girilince kaydettiğimiz verileri oku düğmesi ile tekrar görebiliyoruz.
 
 

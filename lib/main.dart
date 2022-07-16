@@ -6,19 +6,20 @@ import 'package:flutter_udemy_01/arayuz/scaf.dart';
 import 'arayuz/degisenwidget.dart';
 import 'arayuz/hello.dart';
 import 'arayuz/sharedkonusu.dart';
+import 'arayuz/dosyaislemleri.dart';
 
 void main(){
   runApp(MaterialApp(
     initialRoute: "/",
     routes: {
       "/": (context) => ScaffoldOgesi(),
-      "/ilksayfa": (context) => IlkSayfa(),
+      "/ilksayfa": (context) => const IlkSayfa(),
       "/degisenwidget": (context) => DegisenWidget(),
-      "/hello": (context) => Hello(),
+      "/hello": (context) => const Hello(),
       "/imageviews": (context) => ImageViews(),
       "/alertvetextfield": (context) => AlertVeTextField(),
-      "/sharedkonusu": (context) => SharedKonusu(),
-
+      "/sharedkonusu": (context) => const SharedKonusu(),
+      "/dosyakonusu": (context) => DosyaIslemleri(kayitislemi: KayitIslemleri(),),
     },
   ),
   );
