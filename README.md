@@ -63,5 +63,13 @@ Boş bırakırsak aşağıdaki mesaj çıkacak
 Bir isim yazıp devam edersek, aşağıdaki selamlama kutusu çıkacak
 <BR>
 ![ScreenShot](/screen_shots/img-17-alertdialog.png)
+<BR>
+Shared Preference Uygulaması
+Burada kayıt ekleme, gösterme ve silme yapılıyor.
+Yapılan işlem bellekte tutulan değerler üzerinde yapılıyor.
+<BR>
+![ScreenShot](/screen_shots/img-18-sharedpref-1.png)
+<BR>
+![ScreenShot](/screen_shots/img-19-sharedpref-2.png)
 
 

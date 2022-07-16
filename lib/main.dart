@@ -5,6 +5,7 @@ import 'package:flutter_udemy_01/arayuz/imageviews.dart';
 import 'package:flutter_udemy_01/arayuz/scaf.dart';
 import 'arayuz/degisenwidget.dart';
 import 'arayuz/hello.dart';
+import 'arayuz/sharedkonusu.dart';
 
 void main(){
   runApp(MaterialApp(
@@ -16,6 +17,7 @@ void main(){
       "/hello": (context) => Hello(),
       "/imageviews": (context) => ImageViews(),
       "/alertvetextfield": (context) => AlertVeTextField(),
+      "/sharedkonusu": (context) => SharedKonusu(),
 
     },
   ),

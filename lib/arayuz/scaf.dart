@@ -1,7 +1,7 @@
 import "package:flutter/material.dart";
 import 'package:fluttertoast/fluttertoast.dart';
 
-class ScaffoldOgesi extends StatelessWidget{
+class ScaffoldOgesi extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -36,27 +36,31 @@ class ScaffoldOgesi extends StatelessWidget{
             children: [
               GestureDetector(
                 onTap: () => Navigator.pushNamed(context, "/ilksayfa"),
-                child: Container(
-                  decoration: const BoxDecoration(
-                    image: DecorationImage(
-                      image: NetworkImage("https://storage.googleapis.com/material-design/publish/material_v_11/assets/0Bx4BSt6jniD7T0hfM01sSmRyTG8/layout_structure_regions_mobile.png"),
-                      fit: BoxFit.cover
+                child: Card(
+                  child: Container(
+                    decoration: const BoxDecoration(
+                      image: DecorationImage(
+                          image: NetworkImage(
+                              "https://storage.googleapis.com/material-design/publish/material_v_11/assets/0Bx4BSt6jniD7T0hfM01sSmRyTG8/layout_structure_regions_mobile.png"),
+                          fit: BoxFit.cover),
                     ),
-                  ),
-                  margin: const EdgeInsets.all(5.0),
-                  alignment: Alignment.bottomCenter,
-                  child: Transform(
+                    margin: const EdgeInsets.all(5.0),
                     alignment: Alignment.bottomCenter,
-                    transform: Matrix4.skewY(0.0)..rotateZ(0.0),
-                    child: Container(
-                      width: double.infinity, //sonsuz kaplama
-                      padding: const EdgeInsets.all(8.0),
-                      color: const Color(0xCDFFFFDD), // CD değeri transparanlık
-                      child: const Text(
-                        "Tek Tıklama \n İlk sayfaya git",
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold, // Bold font
+                    child: Transform(
+                      alignment: Alignment.bottomCenter,
+                      transform: Matrix4.skewY(0.0)..rotateZ(0.0),
+                      child: Container(
+                        width: double.infinity,
+                        //sonsuz kaplama
+                        padding: const EdgeInsets.all(8.0),
+                        color: const Color(0xCDFFFFDD),
+                        // CD değeri transparanlık
+                        child: const Text(
+                          "Tek Tıklama \n İlk sayfaya git",
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold, // Bold font
+                          ),
                         ),
                       ),
                     ),
@@ -65,27 +69,30 @@ class ScaffoldOgesi extends StatelessWidget{
               ),
               GestureDetector(
                 onDoubleTap: () => Navigator.pushNamed(context, "/imageviews"),
-                child: Container(
-                  decoration: const BoxDecoration(
-                    image: DecorationImage(
-                        image: AssetImage("assets/images/lake.jpg"),
-                        fit: BoxFit.fill
+                child: Card(
+                  child: Container(
+                    decoration: const BoxDecoration(
+                      image: DecorationImage(
+                          image: AssetImage("assets/images/lake.jpg"),
+                          fit: BoxFit.fill),
                     ),
-                  ),
-                  margin: const EdgeInsets.all(5.0),
-                  alignment: Alignment.bottomCenter,
-                  child: Transform(
+                    margin: const EdgeInsets.all(5.0),
                     alignment: Alignment.bottomCenter,
-                    transform: Matrix4.skewY(0.0)..rotateZ(0.0),
-                    child: Container(
-                      width: double.infinity, //sonsuz kaplama
-                      padding: const EdgeInsets.all(8.0),
-                      color: const Color(0xCDFFFFDD), // CD değeri transparanlık
-                      child: const Text(
-                        "Çift Tıklama \n ImageViews Sayfasına Git",
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold, // Bold font
+                    child: Transform(
+                      alignment: Alignment.bottomCenter,
+                      transform: Matrix4.skewY(0.0)..rotateZ(0.0),
+                      child: Container(
+                        width: double.infinity,
+                        //sonsuz kaplama
+                        padding: const EdgeInsets.all(8.0),
+                        color: const Color(0xCDFFFFDD),
+                        // CD değeri transparanlık
+                        child: const Text(
+                          "Çift Tıklama \n ImageViews Sayfasına Git",
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold, // Bold font
+                          ),
                         ),
                       ),
                     ),
@@ -93,28 +100,33 @@ class ScaffoldOgesi extends StatelessWidget{
                 ),
               ),
               GestureDetector(
-                onLongPress: () => Navigator.pushNamed(context, "/degisenwidget"),
-                child: Container(
-                  decoration: const BoxDecoration(
-                    image: DecorationImage(
-                        image: NetworkImage("https://blog.logrocket.com/wp-content/uploads/2018/08/long-press-directive-vue.png"),
-                        fit: BoxFit.cover
+                onLongPress: () =>
+                    Navigator.pushNamed(context, "/degisenwidget"),
+                child: Card(
+                  child: Container(
+                    decoration: const BoxDecoration(
+                      image: DecorationImage(
+                          image: NetworkImage(
+                              "https://blog.logrocket.com/wp-content/uploads/2018/08/long-press-directive-vue.png"),
+                          fit: BoxFit.cover),
                     ),
-                  ),
-                  margin: const EdgeInsets.all(5.0),
-                  alignment: Alignment.bottomCenter,
-                  child: Transform(
+                    margin: const EdgeInsets.all(5.0),
                     alignment: Alignment.bottomCenter,
-                    transform: Matrix4.skewY(0.0)..rotateZ(0.0),
-                    child: Container(
-                      width: double.infinity, //sonsuz kaplama
-                      padding: const EdgeInsets.all(8.0),
-                      color: const Color(0xCDFFFFDD), // CD değeri transparanlık
-                      child: const Text(
-                        "Uzun basma ile \n değişebilen widget sayfasına git",
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold, // Bold font
+                    child: Transform(
+                      alignment: Alignment.bottomCenter,
+                      transform: Matrix4.skewY(0.0)..rotateZ(0.0),
+                      child: Container(
+                        width: double.infinity,
+                        //sonsuz kaplama
+                        padding: const EdgeInsets.all(8.0),
+                        color: const Color(0xCDFFFFDD),
+                        // CD değeri transparanlık
+                        child: const Text(
+                          "Uzun basma ile \n değişebilen widget sayfasına git",
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold, // Bold font
+                          ),
                         ),
                       ),
                     ),
@@ -153,8 +165,7 @@ class ScaffoldOgesi extends StatelessWidget{
                   decoration: const BoxDecoration(
                     image: DecorationImage(
                         image: AssetImage("assets/images/toast1.jpg"),
-                        fit: BoxFit.cover
-                    ),
+                        fit: BoxFit.cover),
                   ),
                   margin: const EdgeInsets.all(5.0),
                   alignment: Alignment.bottomCenter,
@@ -178,27 +189,62 @@ class ScaffoldOgesi extends StatelessWidget{
               ),
               GestureDetector(
                 onTap: () => Navigator.pushNamed(context, "/alertvetextfield"),
-                child: Container(
-                  decoration: const BoxDecoration(
-                    image: DecorationImage(
-                        image: AssetImage("assets/images/lake.jpg"),
-                        fit: BoxFit.cover
+                child: Card(
+                  child: Container(
+                    decoration: const BoxDecoration(
+                      image: DecorationImage(
+                          image: AssetImage("assets/images/lake.jpg"),
+                          fit: BoxFit.cover),
+                    ),
+                    margin: const EdgeInsets.all(5.0),
+                    alignment: Alignment.bottomCenter,
+                    child: Transform(
+                      alignment: Alignment.bottomCenter,
+                      transform: Matrix4.skewY(0.0)..rotateZ(0.0),
+                      child: Container(
+                        width: double.infinity,
+                        //sonsuz kaplama
+                        padding: const EdgeInsets.all(8.0),
+                        color: const Color(0xCDFFFFDD),
+                        // CD değeri transparanlık
+                        child: const Text(
+                          "TextField Sayfası \n AlertView Sayfasına Git",
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold, // Bold font
+                          ),
+                        ),
+                      ),
                     ),
                   ),
-                  margin: const EdgeInsets.all(5.0),
-                  alignment: Alignment.bottomCenter,
-                  child: Transform(
+                ),
+              ),
+              GestureDetector(
+                onTap: () => Navigator.pushNamed(context, "/sharedkonusu"),
+                child: Card(
+                  child: Container(
+                    decoration: const BoxDecoration(
+                      image: DecorationImage(
+                          image: AssetImage("assets/images/lake.jpg"),
+                          fit: BoxFit.cover),
+                    ),
+                    margin: const EdgeInsets.all(5.0),
                     alignment: Alignment.bottomCenter,
-                    transform: Matrix4.skewY(0.0)..rotateZ(0.0),
-                    child: Container(
-                      width: double.infinity, //sonsuz kaplama
-                      padding: const EdgeInsets.all(8.0),
-                      color: const Color(0xCDFFFFDD), // CD değeri transparanlık
-                      child: const Text(
-                        "TextField Sayfası \n AlertView Sayfasına Git",
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold, // Bold font
+                    child: Transform(
+                      alignment: Alignment.bottomCenter,
+                      transform: Matrix4.skewY(0.0)..rotateZ(0.0),
+                      child: Container(
+                        width: double.infinity,
+                        //sonsuz kaplama
+                        padding: const EdgeInsets.all(8.0),
+                        color: const Color(0xCDFFFFDD),
+                        // CD değeri transparanlık
+                        child: const Text(
+                          "Shared Preferences \n Sayfasına Git",
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold, // Bold font
+                          ),
                         ),
                       ),
                     ),
@@ -209,217 +255,312 @@ class ScaffoldOgesi extends StatelessWidget{
                 color: Colors.blue.shade400,
                 margin: const EdgeInsets.all(5.0),
                 alignment: Alignment.center,
-                child: const Text("Grid Elemanı-06", textAlign: TextAlign.center,),
+                child: const Text(
+                  "Grid Elemanı-07",
+                  textAlign: TextAlign.center,
+                ),
               ),
               Container(
                 color: Colors.blue.shade400,
                 margin: const EdgeInsets.all(5.0),
                 alignment: Alignment.center,
-                child: const Text("Grid Elemanı-07", textAlign: TextAlign.center,),
+                child: const Text(
+                  "Grid Elemanı-08",
+                  textAlign: TextAlign.center,
+                ),
               ),
               Container(
                 color: Colors.blue.shade400,
                 margin: const EdgeInsets.all(5.0),
                 alignment: Alignment.center,
-                child: const Text("Grid Elemanı-08", textAlign: TextAlign.center,),
+                child: const Text(
+                  "Grid Elemanı-09",
+                  textAlign: TextAlign.center,
+                ),
               ),
               Container(
                 color: Colors.blue.shade400,
                 margin: const EdgeInsets.all(5.0),
                 alignment: Alignment.center,
-                child: const Text("Grid Elemanı-09", textAlign: TextAlign.center,),
+                child: const Text(
+                  "Grid Elemanı-10",
+                  textAlign: TextAlign.center,
+                ),
               ),
               Container(
                 color: Colors.blue.shade400,
                 margin: const EdgeInsets.all(5.0),
                 alignment: Alignment.center,
-                child: const Text("Grid Elemanı-10", textAlign: TextAlign.center,),
+                child: const Text(
+                  "Grid Elemanı-11",
+                  textAlign: TextAlign.center,
+                ),
               ),
               Container(
                 color: Colors.blue.shade400,
                 margin: const EdgeInsets.all(5.0),
                 alignment: Alignment.center,
-                child: const Text("Grid Elemanı-11", textAlign: TextAlign.center,),
+                child: const Text(
+                  "Grid Elemanı-12",
+                  textAlign: TextAlign.center,
+                ),
               ),
               Container(
                 color: Colors.blue.shade400,
                 margin: const EdgeInsets.all(5.0),
                 alignment: Alignment.center,
-                child: const Text("Grid Elemanı-12", textAlign: TextAlign.center,),
+                child: const Text(
+                  "Grid Elemanı-13",
+                  textAlign: TextAlign.center,
+                ),
               ),
               Container(
                 color: Colors.blue.shade400,
                 margin: const EdgeInsets.all(5.0),
                 alignment: Alignment.center,
-                child: const Text("Grid Elemanı-13", textAlign: TextAlign.center,),
+                child: const Text(
+                  "Grid Elemanı-14",
+                  textAlign: TextAlign.center,
+                ),
               ),
               Container(
                 color: Colors.blue.shade400,
                 margin: const EdgeInsets.all(5.0),
                 alignment: Alignment.center,
-                child: const Text("Grid Elemanı-14", textAlign: TextAlign.center,),
+                child: const Text(
+                  "Grid Elemanı-15",
+                  textAlign: TextAlign.center,
+                ),
               ),
               Container(
                 color: Colors.blue.shade400,
                 margin: const EdgeInsets.all(5.0),
                 alignment: Alignment.center,
-                child: const Text("Grid Elemanı-15", textAlign: TextAlign.center,),
+                child: const Text(
+                  "Grid Elemanı-16",
+                  textAlign: TextAlign.center,
+                ),
               ),
               Container(
                 color: Colors.blue.shade400,
                 margin: const EdgeInsets.all(5.0),
                 alignment: Alignment.center,
-                child: const Text("Grid Elemanı-16", textAlign: TextAlign.center,),
+                child: const Text(
+                  "Grid Elemanı-17",
+                  textAlign: TextAlign.center,
+                ),
               ),
               Container(
                 color: Colors.blue.shade400,
                 margin: const EdgeInsets.all(5.0),
                 alignment: Alignment.center,
-                child: const Text("Grid Elemanı-17", textAlign: TextAlign.center,),
+                child: const Text(
+                  "Grid Elemanı-18",
+                  textAlign: TextAlign.center,
+                ),
               ),
               Container(
                 color: Colors.blue.shade400,
                 margin: const EdgeInsets.all(5.0),
                 alignment: Alignment.center,
-                child: const Text("Grid Elemanı-18", textAlign: TextAlign.center,),
+                child: const Text(
+                  "Grid Elemanı-19",
+                  textAlign: TextAlign.center,
+                ),
               ),
               Container(
                 color: Colors.blue.shade400,
                 margin: const EdgeInsets.all(5.0),
                 alignment: Alignment.center,
-                child: const Text("Grid Elemanı-19", textAlign: TextAlign.center,),
+                child: const Text(
+                  "Grid Elemanı-20",
+                  textAlign: TextAlign.center,
+                ),
               ),
               Container(
                 color: Colors.blue.shade400,
                 margin: const EdgeInsets.all(5.0),
                 alignment: Alignment.center,
-                child: const Text("Grid Elemanı-20", textAlign: TextAlign.center,),
+                child: const Text(
+                  "Grid Elemanı-21",
+                  textAlign: TextAlign.center,
+                ),
               ),
               Container(
                 color: Colors.blue.shade400,
                 margin: const EdgeInsets.all(5.0),
                 alignment: Alignment.center,
-                child: const Text("Grid Elemanı-21", textAlign: TextAlign.center,),
+                child: const Text(
+                  "Grid Elemanı-22",
+                  textAlign: TextAlign.center,
+                ),
               ),
               Container(
                 color: Colors.blue.shade400,
                 margin: const EdgeInsets.all(5.0),
                 alignment: Alignment.center,
-                child: const Text("Grid Elemanı-22", textAlign: TextAlign.center,),
+                child: const Text(
+                  "Grid Elemanı-23",
+                  textAlign: TextAlign.center,
+                ),
               ),
               Container(
                 color: Colors.blue.shade400,
                 margin: const EdgeInsets.all(5.0),
                 alignment: Alignment.center,
-                child: const Text("Grid Elemanı-23", textAlign: TextAlign.center,),
+                child: const Text(
+                  "Grid Elemanı-24",
+                  textAlign: TextAlign.center,
+                ),
               ),
               Container(
                 color: Colors.blue.shade400,
                 margin: const EdgeInsets.all(5.0),
                 alignment: Alignment.center,
-                child: const Text("Grid Elemanı-24", textAlign: TextAlign.center,),
+                child: const Text(
+                  "Grid Elemanı-25",
+                  textAlign: TextAlign.center,
+                ),
               ),
               Container(
                 color: Colors.blue.shade400,
                 margin: const EdgeInsets.all(5.0),
                 alignment: Alignment.center,
-                child: const Text("Grid Elemanı-25", textAlign: TextAlign.center,),
+                child: const Text(
+                  "Grid Elemanı-26",
+                  textAlign: TextAlign.center,
+                ),
               ),
               Container(
                 color: Colors.blue.shade400,
                 margin: const EdgeInsets.all(5.0),
                 alignment: Alignment.center,
-                child: const Text("Grid Elemanı-26", textAlign: TextAlign.center,),
+                child: const Text(
+                  "Grid Elemanı-27",
+                  textAlign: TextAlign.center,
+                ),
               ),
               Container(
                 color: Colors.blue.shade400,
                 margin: const EdgeInsets.all(5.0),
                 alignment: Alignment.center,
-                child: const Text("Grid Elemanı-27", textAlign: TextAlign.center,),
+                child: const Text(
+                  "Grid Elemanı-28",
+                  textAlign: TextAlign.center,
+                ),
               ),
               Container(
                 color: Colors.blue.shade400,
                 margin: const EdgeInsets.all(5.0),
                 alignment: Alignment.center,
-                child: const Text("Grid Elemanı-28", textAlign: TextAlign.center,),
+                child: const Text(
+                  "Grid Elemanı-29",
+                  textAlign: TextAlign.center,
+                ),
               ),
               Container(
                 color: Colors.blue.shade400,
                 margin: const EdgeInsets.all(5.0),
                 alignment: Alignment.center,
-                child: const Text("Grid Elemanı-29", textAlign: TextAlign.center,),
+                child: const Text(
+                  "Grid Elemanı-30",
+                  textAlign: TextAlign.center,
+                ),
               ),
               Container(
                 color: Colors.blue.shade400,
                 margin: const EdgeInsets.all(5.0),
                 alignment: Alignment.center,
-                child: const Text("Grid Elemanı-30", textAlign: TextAlign.center,),
+                child: const Text(
+                  "Grid Elemanı-31",
+                  textAlign: TextAlign.center,
+                ),
               ),
               Container(
                 color: Colors.blue.shade400,
                 margin: const EdgeInsets.all(5.0),
                 alignment: Alignment.center,
-                child: const Text("Grid Elemanı-31", textAlign: TextAlign.center,),
+                child: const Text(
+                  "Grid Elemanı-32",
+                  textAlign: TextAlign.center,
+                ),
               ),
               Container(
                 color: Colors.blue.shade400,
                 margin: const EdgeInsets.all(5.0),
                 alignment: Alignment.center,
-                child: const Text("Grid Elemanı-32", textAlign: TextAlign.center,),
+                child: const Text(
+                  "Grid Elemanı-33",
+                  textAlign: TextAlign.center,
+                ),
               ),
               Container(
                 color: Colors.blue.shade400,
                 margin: const EdgeInsets.all(5.0),
                 alignment: Alignment.center,
-                child: const Text("Grid Elemanı-33", textAlign: TextAlign.center,),
+                child: const Text(
+                  "Grid Elemanı-34",
+                  textAlign: TextAlign.center,
+                ),
               ),
               Container(
                 color: Colors.blue.shade400,
                 margin: const EdgeInsets.all(5.0),
                 alignment: Alignment.center,
-                child: const Text("Grid Elemanı-34", textAlign: TextAlign.center,),
+                child: const Text(
+                  "Grid Elemanı-35",
+                  textAlign: TextAlign.center,
+                ),
               ),
               Container(
                 color: Colors.blue.shade400,
                 margin: const EdgeInsets.all(5.0),
                 alignment: Alignment.center,
-                child: const Text("Grid Elemanı-35", textAlign: TextAlign.center,),
+                child: const Text(
+                  "Grid Elemanı-36",
+                  textAlign: TextAlign.center,
+                ),
               ),
               Container(
                 color: Colors.blue.shade400,
                 margin: const EdgeInsets.all(5.0),
                 alignment: Alignment.center,
-                child: const Text("Grid Elemanı-36", textAlign: TextAlign.center,),
+                child: const Text(
+                  "Grid Elemanı-37",
+                  textAlign: TextAlign.center,
+                ),
               ),
               Container(
                 color: Colors.blue.shade400,
                 margin: const EdgeInsets.all(5.0),
                 alignment: Alignment.center,
-                child: const Text("Grid Elemanı-37", textAlign: TextAlign.center,),
+                child: const Text(
+                  "Grid Elemanı-38",
+                  textAlign: TextAlign.center,
+                ),
               ),
               Container(
                 color: Colors.blue.shade400,
                 margin: const EdgeInsets.all(5.0),
                 alignment: Alignment.center,
-                child: const Text("Grid Elemanı-38", textAlign: TextAlign.center,),
+                child: const Text(
+                  "Grid Elemanı-39",
+                  textAlign: TextAlign.center,
+                ),
               ),
               Container(
                 color: Colors.blue.shade400,
                 margin: const EdgeInsets.all(5.0),
                 alignment: Alignment.center,
-                child: const Text("Grid Elemanı-39", textAlign: TextAlign.center,),
-              ),
-              Container(
-                color: Colors.blue.shade400,
-                margin: const EdgeInsets.all(5.0),
-                alignment: Alignment.center,
-                child: const Text("Grid Elemanı-40", textAlign: TextAlign.center,),
+                child: const Text(
+                  "Grid Elemanı-40",
+                  textAlign: TextAlign.center,
+                ),
               ),
             ],
           ),
           // child: Text("Merhaba Scaffold"),
         ),
-
       ),
       bottomNavigationBar: BottomNavigationBar(
         items: const [
@@ -436,8 +577,8 @@ class ScaffoldOgesi extends StatelessWidget{
             label: "Değerlendirme",
           ),
         ],
-        onTap: (int i ) {
-          switch(i){
+        onTap: (int i) {
+          switch (i) {
             case 0:
               debugPrint("Tıklanan buton : Arşiv");
               break;
@@ -457,7 +598,7 @@ class ScaffoldOgesi extends StatelessWidget{
         child: ListTile(
           leading: const Icon(Icons.change_history),
           title: const Text("Change History"),
-          onTap: (){
+          onTap: () {
             Navigator.pop(context);
             debugPrint("Yan menü tıklandı");
           },
