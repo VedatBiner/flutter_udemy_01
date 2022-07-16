@@ -71,5 +71,25 @@ Yapılan işlem bellekte tutulan değerler üzerinde yapılıyor.
 ![ScreenShot](/screen_shots/img-18-sharedpref-1.png)
 <BR>
 ![ScreenShot](/screen_shots/img-19-sharedpref-2.png)
+<BR>
+Eğer boş kayıt girilir ve kaydet düğmesine basılırsa aşağıdaki mesaj çıkıyor.
+<BR>
+![ScreenShot](/screen_shots/img-20-sharedpref-3.png)
+<BR>
+Kayıt girilince aşağıdaki mesaj çıkacaktır.
+<BR>
+![ScreenShot](/screen_shots/img-21-sharedpref-4.png)
+<BR>
+Getir düğmesine basılınca aşağıdaki gibi görünüyor.
+<BR>
+![ScreenShot](/screen_shots/img-22-sharedpref-5.png)
+<BR>
+Sil Düğmesine basılınca aşağıdaki gibi görünüyor.
+<BR>
+![ScreenShot](/screen_shots/img-23-sharedpref-6.png)
+<BR>
+Ancak bu aşamadan sonra getir düğmesine basılırsa kayıt boş gelmesi gerkirken dolu geliyor.
+*** Bir yerde hata var.
+
 
 
