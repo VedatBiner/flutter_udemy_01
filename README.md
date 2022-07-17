@@ -1,6 +1,7 @@
-# flutter_udemy01
-https://www.udemy.com/course/google-flutter-ve-dart-programlama-dili-temel-egitimi/learn/lecture/12128622#reviews
-Eğitiminden örnekler. Her birini farklı branch olacak şekilde düzenledim.
+# Flutter GridView widget kullanılarak seçenekler üzerinde erişilip, farklı işlemler gerçekleştiren bir uygulama\
+
+[Bir Udemy Eğitimi](https://www.udemy.com/course/google-flutter-ve-dart-programlama-dili-temel-egitimi/learn/lecture/12128622#reviews) adresinden\
+erişilen Udemy eğitimindeki derslerden örnekler. Her Uygulama Gridview ile erişilen farklı branch olacak şekilde düzenledim.
 
 iconButton ve BottomNavigationBar Widget 'ları denendi.
 <BR>
@@ -108,7 +109,7 @@ Burada kısa bir yüklenme süreci sonrası bir JSON görüntülenmesi yapılıy
 ![ScreenShot](/screen_shots/img-28-JSON-2.png)\
 Lokal JSON işlemleri\
 ![ScreenShot](/screen_shots/img-29-localJSON-1.png)
-![ScreenShot](/screen_shots/img-30-localJSON-2.png)
+![ScreenShot](/screen_shots/img-30-localJSON-2.png)\
 Kod çalışıyor ancak garip bir hata var. ***
 
 
