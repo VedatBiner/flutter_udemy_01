@@ -99,8 +99,12 @@ Burada telefonda bir dosya oluşturulup, okuma-yazma işlemi yapılıyor.
 <BR>
 Kaydet düğmesine basılınca aşağıdaki gibi görünecektir.
 <BR>
-![ScreenShot](/screen_shots/img-26-dosyaislemleri-3.png)
-<BR>
-Bu bölümden çıkılıp, tekrar girilince kaydettiğimiz verileri oku düğmesi ile tekrar görebiliyoruz.
+![ScreenShot](/screen_shots/img-26-dosyaislemleri-3.png)\
+Bu bölümden çıkılıp, tekrar girilince kaydettiğimiz verileri oku düğmesi ile tekrar görebiliyoruz.\
+Basit JSON işlemleri\
+![ScreenShot](/screen_shots/img-27-JSON-1.png)\
+Burada kısa bir yüklenme süreci sonrası bir JSON görüntülenmesi yapılıyor.\
+![ScreenShot](/screen_shots/img-28-JSON-2.png)\
+
 
 

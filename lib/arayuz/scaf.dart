@@ -283,13 +283,36 @@ class ScaffoldOgesi extends StatelessWidget {
                   ),
                 ),
               ),
-              Container(
-                color: Colors.blue.shade400,
-                margin: const EdgeInsets.all(5.0),
-                alignment: Alignment.center,
-                child: const Text(
-                  "Grid Elemanı-08",
-                  textAlign: TextAlign.center,
+              GestureDetector(
+                onTap: () => Navigator.pushNamed(context, "/jsonkonusu"),
+                child: Card(
+                  child: Container(
+                    decoration: const BoxDecoration(
+                      image: DecorationImage(
+                          image: AssetImage("assets/images/lake.jpg"),
+                          fit: BoxFit.cover),
+                    ),
+                    margin: const EdgeInsets.all(5.0),
+                    alignment: Alignment.bottomCenter,
+                    child: Transform(
+                      alignment: Alignment.bottomCenter,
+                      transform: Matrix4.skewY(0.0)..rotateZ(0.0),
+                      child: Container(
+                        width: double.infinity,
+                        //sonsuz kaplama
+                        padding: const EdgeInsets.all(8.0),
+                        color: const Color(0xCDFFFFDD),
+                        // CD değeri transparanlık
+                        child: const Text(
+                          "Basit JSON İşlemleri \n Sayfasına Git",
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold, // Bold font
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
                 ),
               ),
               Container(
