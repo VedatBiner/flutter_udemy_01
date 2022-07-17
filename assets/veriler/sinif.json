@@ -1,0 +1,41 @@
+[
+  {
+    "okulno" : 324,
+    "adi" : "Vedat",
+    "soyadi" : "Biner",
+    "cinsiyet" : "Erkek",
+    "basarili" : true,
+    "veli" : {
+      "adi": "Hamit",
+      "soyadi": "Biner",
+      "yakinlik": "Babası",
+      "telno": 1234567
+    }
+  },
+  {
+    "okulno": 546,
+    "adi": "Zeynep",
+    "soyadi": "Biner",
+    "cinsiyet": "Kadın",
+    "basarili": true,
+    "veli": {
+      "adi": "Süreyya",
+      "soyadi": "Şehidoğlu",
+      "yakinlik": "Babası",
+      "telno": 1345678
+    }
+  },
+  {
+    "okulno": 138,
+    "adi": "Sevim",
+    "soyadi": "Ulus",
+    "cinsiyet": "Kadın",
+    "basarili": false,
+    "veli": {
+      "adi": "Ahmet",
+      "soyadi": "Ulus",
+      "yakinlik": "Babası",
+      "telno": 4152709
+    }
+  }
+]

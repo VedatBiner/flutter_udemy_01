@@ -6,6 +6,7 @@ import 'package:flutter_udemy_01/arayuz/scaf.dart';
 import 'arayuz/degisenwidget.dart';
 import 'arayuz/hello.dart';
 import 'arayuz/jsonkonusu.dat.dart';
+import 'arayuz/localjsonkonusu.dart';
 import 'arayuz/sharedkonusu.dart';
 import 'arayuz/dosyaislemleri.dart';
 
@@ -22,6 +23,7 @@ void main(){
       "/sharedkonusu": (context) => const SharedKonusu(),
       "/dosyakonusu": (context) => DosyaIslemleri(kayitislemi: KayitIslemleri(),),
       "/jsonkonusu": (context) => JsonKonusu(),
+      "/localjsonkonusu": (context) => LocalJsonKonusu(),
     },
   ),
   );

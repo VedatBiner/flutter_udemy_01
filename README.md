@@ -102,9 +102,13 @@ Kaydet düğmesine basılınca aşağıdaki gibi görünecektir.
 ![ScreenShot](/screen_shots/img-26-dosyaislemleri-3.png)\
 Bu bölümden çıkılıp, tekrar girilince kaydettiğimiz verileri oku düğmesi ile tekrar görebiliyoruz.\
 Basit JSON işlemleri\
+Burada internetten test için sahte JSON alacağız\
 ![ScreenShot](/screen_shots/img-27-JSON-1.png)\
 Burada kısa bir yüklenme süreci sonrası bir JSON görüntülenmesi yapılıyor.\
 ![ScreenShot](/screen_shots/img-28-JSON-2.png)\
-
+Lokal JSON işlemleri\
+![ScreenShot](/screen_shots/img-29-localJSON-1.png)
+![ScreenShot](/screen_shots/img-30-localJSON-2.png)
+Kod çalışıyor ancak garip bir hata var. ***
 
 
