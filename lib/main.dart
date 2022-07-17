@@ -1,11 +1,12 @@
 import "package:flutter/material.dart";
 import 'package:flutter_udemy_01/arayuz/alervetext.dart';
+import 'package:flutter_udemy_01/arayuz/basithttp.dart';
 import 'package:flutter_udemy_01/arayuz/ilksayfa.dart';
 import 'package:flutter_udemy_01/arayuz/imageviews.dart';
 import 'package:flutter_udemy_01/arayuz/scaf.dart';
 import 'arayuz/degisenwidget.dart';
 import 'arayuz/hello.dart';
-import 'arayuz/jsonkonusu.dat.dart';
+import 'arayuz/jsonkonusu.dart';
 import 'arayuz/localjsonkonusu.dart';
 import 'arayuz/sharedkonusu.dart';
 import 'arayuz/dosyaislemleri.dart';
@@ -24,6 +25,7 @@ void main(){
       "/dosyakonusu": (context) => DosyaIslemleri(kayitislemi: KayitIslemleri(),),
       "/jsonkonusu": (context) => JsonKonusu(),
       "/localjsonkonusu": (context) => LocalJsonKonusu(),
+      "/basithttp": (context) => BasitHttp(),
     },
   ),
   );

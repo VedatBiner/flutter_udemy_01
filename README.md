@@ -1,7 +1,7 @@
 # Flutter GridView widget kullanılarak seçenekler üzerinde erişilip, farklı işlemler gerçekleştiren bir uygulama\
 
-[Bir Udemy Eğitimi](https://www.udemy.com/course/google-flutter-ve-dart-programlama-dili-temel-egitimi/learn/lecture/12128622#reviews) adresinden\
-erişilen Udemy eğitimindeki derslerden örnekler. Her Uygulama Gridview ile erişilen farklı branch olacak şekilde düzenledim.
+[Bir Udemy Eğitimi](https://www.udemy.com/course/google-flutter-ve-dart-programlama-dili-temel-egitimi/learn/lecture/12128622#reviews) adresinden
+erişilen Udemy eğitimindeki derslerden örnekler. Her Uygulama Gridview ile erişilen farklı branch olacak şekilde düzenledim.\
 
 iconButton ve BottomNavigationBar Widget 'ları denendi.
 <BR>
@@ -110,6 +110,13 @@ Burada kısa bir yüklenme süreci sonrası bir JSON görüntülenmesi yapılıy
 Lokal JSON işlemleri\
 ![ScreenShot](/screen_shots/img-29-localJSON-1.png)
 ![ScreenShot](/screen_shots/img-30-localJSON-2.png)\
-Kod çalışıyor ancak garip bir hata var. ***
+Kod çalışıyor ancak garip bir hata var. *** \
+Basit HTTP işlemleri. Burada Get Düğmesine basılınca verilen adresin bod mesajı alınıyor. Örneğin google.com \
+POST düğmesine basılınca karşı tarafa veri gönderiliyor.
+![ScreenShot](/screen_shots/img-31-basithttp-1.png)
+![ScreenShot](/screen_shots/img-32-basithttp-2.png)\
+![ScreenShot](/screen_shots/img-33-basithttp-3.png)
+![ScreenShot](/screen_shots/img-34-basithttp-4.png)\
+
 
 

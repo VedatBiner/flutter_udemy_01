@@ -7,7 +7,8 @@ class LocalJsonKonusu extends StatefulWidget{
 }
 
 class LocalState extends State<LocalJsonKonusu>{
-  List ogrenci = [];
+  late List<dynamic> ogrenci = [];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
