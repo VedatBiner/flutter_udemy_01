@@ -111,7 +111,8 @@ Lokal JSON işlemleri\
 ![ScreenShot](/screen_shots/img-29-localJSON-1.png)
 ![ScreenShot](/screen_shots/img-30-localJSON-2.png)\
 Kod çalışıyor ancak garip bir hata var. *** \
-Basit HTTP işlemleri. Burada Get Düğmesine basılınca verilen adresin bod mesajı alınıyor. Örneğin google.com
+Basit HTTP işlemleri. \  
+GET Düğmesine basılınca verilen adresin body mesajı alınıyor. (Örneğin google.com)\
 POST düğmesine basılınca karşı tarafa veri gönderiliyor.\
 ![ScreenShot](/screen_shots/img-31-basithttp-1.png)
 ![ScreenShot](/screen_shots/img-32-basithttp-2.png)\
