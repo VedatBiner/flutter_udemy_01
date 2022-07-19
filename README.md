@@ -122,5 +122,8 @@ Flash Control Uygulaması\
 Burada donanım izni ve donanım üzerinde denenecek bir uygulama var.\
 ![ScreenShot](/screen_shots/img-35-flashoff.png)
 ![ScreenShot](/screen_shots/img-36-flashon.png)\
+Kendi widget 'ımızı yaratıp kodu kısalttık\,
+
+
 
 
