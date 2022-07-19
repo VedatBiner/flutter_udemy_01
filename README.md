@@ -118,6 +118,9 @@ POST düğmesine basılınca karşı tarafa veri gönderiliyor.\
 ![ScreenShot](/screen_shots/img-32-basithttp-2.png)\
 ![ScreenShot](/screen_shots/img-33-basithttp-3.png)
 ![ScreenShot](/screen_shots/img-34-basithttp-4.png)\
-
+Flash Control Uygulaması\
+Burada donanım izni ve donanım üzerinde denenecek bir uygulama var.\n
+![ScreenShot](/screen_shots/img-35-flashoff.png)
+![ScreenShot](/screen_shots/img-36-flashon.png)\
 
 
