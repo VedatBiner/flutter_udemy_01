@@ -1,7 +1,10 @@
 import "package:flutter/material.dart";
 import 'package:fluttertoast/fluttertoast.dart';
+import '../widgets/ana_card.dart';
 
 class ScaffoldOgesi extends StatelessWidget {
+  const ScaffoldOgesi({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -34,105 +37,16 @@ class ScaffoldOgesi extends StatelessWidget {
             crossAxisSpacing: 10.0,
             crossAxisCount: 2,
             children: [
-              GestureDetector(
-                onTap: () => Navigator.pushNamed(context, "/ilksayfa"),
-                child: Card(
-                  child: Container(
-                    decoration: const BoxDecoration(
-                      image: DecorationImage(
-                          image: NetworkImage(
-                              "https://storage.googleapis.com/material-design/publish/material_v_11/assets/0Bx4BSt6jniD7T0hfM01sSmRyTG8/layout_structure_regions_mobile.png"),
-                          fit: BoxFit.cover),
-                    ),
-                    margin: const EdgeInsets.all(5.0),
-                    alignment: Alignment.bottomCenter,
-                    child: Transform(
-                      alignment: Alignment.bottomCenter,
-                      transform: Matrix4.skewY(0.0)..rotateZ(0.0),
-                      child: Container(
-                        width: double.infinity,
-                        //sonsuz kaplama
-                        padding: const EdgeInsets.all(8.0),
-                        color: const Color(0xCDFFFFDD),
-                        // CD değeri transparanlık
-                        child: const Text(
-                          "Tek Tıklama \n İlk sayfaya git",
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold, // Bold font
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),
-                ),
-              ),
-              GestureDetector(
-                onDoubleTap: () => Navigator.pushNamed(context, "/imageviews"),
-                child: Card(
-                  child: Container(
-                    decoration: const BoxDecoration(
-                      image: DecorationImage(
-                          image: AssetImage("assets/images/lake.jpg"),
-                          fit: BoxFit.fill),
-                    ),
-                    margin: const EdgeInsets.all(5.0),
-                    alignment: Alignment.bottomCenter,
-                    child: Transform(
-                      alignment: Alignment.bottomCenter,
-                      transform: Matrix4.skewY(0.0)..rotateZ(0.0),
-                      child: Container(
-                        width: double.infinity,
-                        //sonsuz kaplama
-                        padding: const EdgeInsets.all(8.0),
-                        color: const Color(0xCDFFFFDD),
-                        // CD değeri transparanlık
-                        child: const Text(
-                          "Çift Tıklama \n ImageViews Sayfasına Git",
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold, // Bold font
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),
-                ),
-              ),
-              GestureDetector(
-                onLongPress: () =>
-                    Navigator.pushNamed(context, "/degisenwidget"),
-                child: Card(
-                  child: Container(
-                    decoration: const BoxDecoration(
-                      image: DecorationImage(
-                          image: NetworkImage(
-                              "https://blog.logrocket.com/wp-content/uploads/2018/08/long-press-directive-vue.png"),
-                          fit: BoxFit.cover),
-                    ),
-                    margin: const EdgeInsets.all(5.0),
-                    alignment: Alignment.bottomCenter,
-                    child: Transform(
-                      alignment: Alignment.bottomCenter,
-                      transform: Matrix4.skewY(0.0)..rotateZ(0.0),
-                      child: Container(
-                        width: double.infinity,
-                        //sonsuz kaplama
-                        padding: const EdgeInsets.all(8.0),
-                        color: const Color(0xCDFFFFDD),
-                        // CD değeri transparanlık
-                        child: const Text(
-                          "Uzun basma ile \n değişebilen widget sayfasına git",
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold, // Bold font
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),
-                ),
-              ),
+              const AnaCard("/elfeneri", "lake.jpg", "El Feneri Örneği"),
+              const AnaCard("/ilksayfa", "lake.jpg", "Tek Tıklama \n İlk sayfaya git"),
+              const AnaCard("/imageviews", "lake.jpg", "Çift Tıklama \n ImageViews Sayfasına Git"),
+              const AnaCard("/degisenwidget", "lake.jpg", "Uzun basma ile \n değişebilen widget sayfasına git"),
+              const AnaCard("/alertvetextfield", "lake.jpg", "TextField Sayfası \n AlertView Sayfasına Git"),
+              const AnaCard("/sharedkonusu", "lake.jpg", "Shared Preferences \n Sayfasına Git"),
+              const AnaCard("/dosyakonusu", "lake.jpg", "Dosya İşlemleri \n Sayfasına Git"),
+              const AnaCard("/jsonkonusu", "lake.jpg", "Basit JSON İşlemleri \n Sayfasına Git"),
+              const AnaCard("/localjsonkonusu", "lake.jpg", "Local JSON İşlemleri \n Sayfasına Git"),
+              const AnaCard("/basithttp", "lake.jpg", "Basit http İşlemleri \n Sayfasına Git"),
               GestureDetector(
                 onTap: () {
                   Fluttertoast.showToast(
@@ -186,231 +100,8 @@ class ScaffoldOgesi extends StatelessWidget {
                     ),
                   ),
                 ),
-              ),
-              GestureDetector(
-                onTap: () => Navigator.pushNamed(context, "/alertvetextfield"),
-                child: Card(
-                  child: Container(
-                    decoration: const BoxDecoration(
-                      image: DecorationImage(
-                          image: AssetImage("assets/images/lake.jpg"),
-                          fit: BoxFit.cover),
-                    ),
-                    margin: const EdgeInsets.all(5.0),
-                    alignment: Alignment.bottomCenter,
-                    child: Transform(
-                      alignment: Alignment.bottomCenter,
-                      transform: Matrix4.skewY(0.0)..rotateZ(0.0),
-                      child: Container(
-                        width: double.infinity,
-                        //sonsuz kaplama
-                        padding: const EdgeInsets.all(8.0),
-                        color: const Color(0xCDFFFFDD),
-                        // CD değeri transparanlık
-                        child: const Text(
-                          "TextField Sayfası \n AlertView Sayfasına Git",
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold, // Bold font
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),
-                ),
-              ),
-              GestureDetector(
-                onTap: () => Navigator.pushNamed(context, "/sharedkonusu"),
-                child: Card(
-                  child: Container(
-                    decoration: const BoxDecoration(
-                      image: DecorationImage(
-                          image: AssetImage("assets/images/lake.jpg"),
-                          fit: BoxFit.cover),
-                    ),
-                    margin: const EdgeInsets.all(5.0),
-                    alignment: Alignment.bottomCenter,
-                    child: Transform(
-                      alignment: Alignment.bottomCenter,
-                      transform: Matrix4.skewY(0.0)..rotateZ(0.0),
-                      child: Container(
-                        width: double.infinity,
-                        //sonsuz kaplama
-                        padding: const EdgeInsets.all(8.0),
-                        color: const Color(0xCDFFFFDD),
-                        // CD değeri transparanlık
-                        child: const Text(
-                          "Shared Preferences \n Sayfasına Git",
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold, // Bold font
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),
-                ),
-              ),
-              GestureDetector(
-                onTap: () => Navigator.pushNamed(context, "/dosyakonusu"),
-                child: Card(
-                  child: Container(
-                    decoration: const BoxDecoration(
-                      image: DecorationImage(
-                          image: AssetImage("assets/images/lake.jpg"),
-                          fit: BoxFit.cover),
-                    ),
-                    margin: const EdgeInsets.all(5.0),
-                    alignment: Alignment.bottomCenter,
-                    child: Transform(
-                      alignment: Alignment.bottomCenter,
-                      transform: Matrix4.skewY(0.0)..rotateZ(0.0),
-                      child: Container(
-                        width: double.infinity,
-                        //sonsuz kaplama
-                        padding: const EdgeInsets.all(8.0),
-                        color: const Color(0xCDFFFFDD),
-                        // CD değeri transparanlık
-                        child: const Text(
-                          "Dosya İşlemleri \n Sayfasına Git",
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold, // Bold font
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),
-                ),
-              ),
-              GestureDetector(
-                onTap: () => Navigator.pushNamed(context, "/jsonkonusu"),
-                child: Card(
-                  child: Container(
-                    decoration: const BoxDecoration(
-                      image: DecorationImage(
-                          image: AssetImage("assets/images/lake.jpg"),
-                          fit: BoxFit.cover),
-                    ),
-                    margin: const EdgeInsets.all(5.0),
-                    alignment: Alignment.bottomCenter,
-                    child: Transform(
-                      alignment: Alignment.bottomCenter,
-                      transform: Matrix4.skewY(0.0)..rotateZ(0.0),
-                      child: Container(
-                        width: double.infinity,
-                        //sonsuz kaplama
-                        padding: const EdgeInsets.all(8.0),
-                        color: const Color(0xCDFFFFDD),
-                        // CD değeri transparanlık
-                        child: const Text(
-                          "Basit JSON İşlemleri \n Sayfasına Git",
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold, // Bold font
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),
-                ),
-              ),
-              GestureDetector(
-                onTap: () => Navigator.pushNamed(context, "/localjsonkonusu"),
-                child: Card(
-                  child: Container(
-                    decoration: const BoxDecoration(
-                      image: DecorationImage(
-                          image: AssetImage("assets/images/lake.jpg"),
-                          fit: BoxFit.cover),
-                    ),
-                    margin: const EdgeInsets.all(5.0),
-                    alignment: Alignment.bottomCenter,
-                    child: Transform(
-                      alignment: Alignment.bottomCenter,
-                      transform: Matrix4.skewY(0.0)..rotateZ(0.0),
-                      child: Container(
-                        width: double.infinity,
-                        //sonsuz kaplama
-                        padding: const EdgeInsets.all(8.0),
-                        color: const Color(0xCDFFFFDD),
-                        // CD değeri transparanlık
-                        child: const Text(
-                          "Local JSON İşlemleri \n Sayfasına Git",
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold, // Bold font
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),
-                ),
-              ),
-              GestureDetector(
-                onTap: () => Navigator.pushNamed(context, "/basithttp"),
-                child: Card(
-                  child: Container(
-                    decoration: const BoxDecoration(
-                      image: DecorationImage(
-                          image: AssetImage("assets/images/lake.jpg"),
-                          fit: BoxFit.cover),
-                    ),
-                    margin: const EdgeInsets.all(5.0),
-                    alignment: Alignment.bottomCenter,
-                    child: Transform(
-                      alignment: Alignment.bottomCenter,
-                      transform: Matrix4.skewY(0.0)..rotateZ(0.0),
-                      child: Container(
-                        width: double.infinity,
-                        //sonsuz kaplama
-                        padding: const EdgeInsets.all(8.0),
-                        color: const Color(0xCDFFFFDD),
-                        // CD değeri transparanlık
-                        child: const Text(
-                          "Basit http İşlemleri \n Sayfasına Git",
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold, // Bold font
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),
-                ),
-              ),
-              GestureDetector(
-                onTap: () => Navigator.pushNamed(context, "/elfeneri"),
-                child: Card(
-                  child: Container(
-                    decoration: const BoxDecoration(
-                      image: DecorationImage(
-                          image: AssetImage("assets/images/lake.jpg"),
-                          fit: BoxFit.cover),
-                    ),
-                    margin: const EdgeInsets.all(5.0),
-                    alignment: Alignment.bottomCenter,
-                    child: Transform(
-                      alignment: Alignment.bottomCenter,
-                      transform: Matrix4.skewY(0.0)..rotateZ(0.0),
-                      child: Container(
-                        width: double.infinity,
-                        //sonsuz kaplama
-                        padding: const EdgeInsets.all(8.0),
-                        color: const Color(0xCDFFFFDD),
-                        // CD değeri transparanlık
-                        child: const Text(
-                          "El Feneri \n Sayfasına Git",
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold, // Bold font
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),
-                ),
-              ),
+              ), // Toast mesajı silme
+
               Container(
                 color: Colors.blue.shade400,
                 margin: const EdgeInsets.all(5.0),
