@@ -1,6 +1,7 @@
 import "package:flutter/material.dart";
 import 'package:flutter_udemy_01/arayuz/alervetext.dart';
 import 'package:flutter_udemy_01/arayuz/basithttp.dart';
+import 'package:flutter_udemy_01/arayuz/elfeneri.dart';
 import 'package:flutter_udemy_01/arayuz/ilksayfa.dart';
 import 'package:flutter_udemy_01/arayuz/imageviews.dart';
 import 'package:flutter_udemy_01/arayuz/scaf.dart';
@@ -26,6 +27,7 @@ void main(){
       "/jsonkonusu": (context) => JsonKonusu(),
       "/localjsonkonusu": (context) => LocalJsonKonusu(),
       "/basithttp": (context) => BasitHttp(),
+      "/elfeneri": (context) => ElFeneri(),
     },
   ),
   );
