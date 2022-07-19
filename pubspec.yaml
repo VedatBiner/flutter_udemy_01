@@ -71,6 +71,17 @@ flutter:
     - assets/images/ampul-off.png
     - assets/images/ampul-on.png
 
+  fonts:
+    - family: badscript
+      fonts:
+        - asset: assets/fonts/badscript-regular.ttf
+    - family: spicyrice
+      fonts:
+        - asset: assets/fonts/spicyrice-regular.ttf
+    - family: allerta
+      fonts:
+        - asset: assets/fonts/allertastencil-regular.ttf
+
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 

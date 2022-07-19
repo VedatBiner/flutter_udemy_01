@@ -72,9 +72,17 @@ class AlertState extends State<AlertVeTextField>{
               Padding(
                 padding: const EdgeInsets.all(10),
                 child: ElevatedButton(
-                  style: ElevatedButton.styleFrom(primary: Colors.lime,),
+                  style: ElevatedButton.styleFrom(
+                    primary: Colors.lime,
+                  ),
                   onPressed: selamla,
-                  child: const Text("Selamla", style: TextStyle(color: Colors.deepPurple,),
+                  child: const Text(
+                    "Selamla", style: TextStyle(
+                    color: Colors.deepPurple,
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    fontFamily: "badscript",
+                  ),
                   ),
                 ),
               )

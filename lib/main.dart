@@ -1,5 +1,5 @@
 import "package:flutter/material.dart";
-import 'package:flutter_udemy_01/arayuz/alervetext.dart';
+import 'package:flutter_udemy_01/arayuz/alertvetext.dart';
 import 'package:flutter_udemy_01/arayuz/basithttp.dart';
 import 'package:flutter_udemy_01/arayuz/elfeneri.dart';
 import 'package:flutter_udemy_01/arayuz/ilksayfa.dart';
@@ -29,6 +29,9 @@ void main(){
       "/basithttp": (context) => BasitHttp(),
       "/elfeneri": (context) => ElFeneri(),
     },
+    theme: ThemeData(
+      fontFamily: "allerta",
+    ),
   ),
   );
 }
