@@ -42,9 +42,9 @@ class VtState extends State<VtAnasayfa>{
     });
   }
 
-  _ogrenciGuncelle(Ogrenci ogrenci) {
+  _ogrenciGuncelle(int ono) {
     var ogr = Ogrenci(noCtrl.hashCode, isimCtrl.text, soyisimCtrl.text, sinifCtrl.text);
-    ogr.no = ogrenci.no;
+    ogr.no = ono;
     vtYardimcisi.ogrenciGuncelle(ogr).then((cvp){
       if(cvp){
         listeYenile();
@@ -120,7 +120,7 @@ class VtState extends State<VtAnasayfa>{
             ),
             actions: [
               TextButton(
-                onPressed: () => duzenleMi ? _ogrenciGuncelle(ogrenci) : _ogrenciEkle,
+                onPressed: () => duzenleMi ? _ogrenciGuncelle(ogrenci.no) : _ogrenciEkle,
                 child: Text(duzenleMi ? "Düzenle" : "Ekle"),
               ),
               TextButton(
@@ -141,7 +141,7 @@ class VtState extends State<VtAnasayfa>{
         actions: [
           IconButton(
             icon: const Icon(Icons.add),
-            onPressed: () => eklemeEkraniAc(),
+            onPressed: () => eklemeEkraniAc(ogrenci: Ogrenci(noCtrl.hashCode, isimCtrl.text, soyisimCtrl.text, sinifCtrl.text)),
           ),
         ],
       ),
