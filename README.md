@@ -1,4 +1,4 @@
-# Flutter GridView widget kullanılarak seçenekler üzerinde erişilip, farklı işlemler gerçekleştiren bir uygulama\
+# Flutter GridView widget kullanilarak seçenekler üzerinde erisilip, farkli islemler gerçeklestiren bir uygulama\
 
 [Bir Udemy Eğitimi](https://www.udemy.com/course/google-flutter-ve-dart-programlama-dili-temel-egitimi/learn/lecture/12128622#reviews) adresinden
 erişilen Udemy eğitimindeki derslerden örnekler. Her Uygulama Gridview ile erişilen farklı branch olacak şekilde düzenledim.\
