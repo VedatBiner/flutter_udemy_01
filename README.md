@@ -132,6 +132,10 @@ BottomNavigationBar menülerini düzenleyip,statefulwidget haline çevirip, her 
 ![ScreenShot](/screen_shots/img-39-bottomnavigationbar-1.png)
 ![ScreenShot](/screen_shots/img-40-bottomnavigationbar-2.png)
 ![ScreenShot](/screen_shots/img-41-bottomnavigationbar-3.png)\
+Bu örnekte ise Drawer Menu oluşturuyoruz.\
+Sol üstte Flutter logosu, menü ve alt menü seçenekleri görülüyor.\
+![ScreenShot](/screen_shots/img-42-drawer-1.png)
+![ScreenShot](/screen_shots/img-43-drawer-2.png)\
 
 
 

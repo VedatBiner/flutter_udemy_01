@@ -75,16 +75,93 @@ class ScaffoldState extends State<ScaffoldOgesi> {
           });
           }
       ),
-      drawer: Drawer(
-        child: ListTile(
-          leading: const Icon(Icons.change_history),
-          title: const Text("Change History"),
-          onTap: () {
-            Navigator.pop(context);
-            debugPrint("Yan menü tıklandı");
-          },
+      drawer: Container(
+        margin: const EdgeInsets.only(top: 20.0),
+        child: Drawer(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              Container(
+                height: 120.0, // menü genişliği
+                width: double.maxFinite, // genişlik ne kadarsa gidilsin
+                color: Colors.blueAccent.shade200,
+                child: const Padding(
+                  padding: EdgeInsets.all(10.0),
+                  child: Align(
+                    alignment: Alignment.bottomLeft,
+                    child: FlutterLogo(size: 60.0,),
+                  ),
+                ),
+              ),
+              Expanded(
+                child: ListView(
+                  physics: const ClampingScrollPhysics(),
+                  children: [
+                    ListTile(
+                      leading: const Icon(Icons.place),
+                      title: const Text("Yerlerimiz"),
+                      trailing: const Icon(Icons.arrow_right),
+                      onTap: () => Navigator.pop(context),
+                    ),
+                    const Divider(
+                      height: 1.0,
+                      color: Colors.indigoAccent,
+                    ),
+                    ListTile(
+                      leading: const Icon(Icons.access_alarm),
+                      title: const Text("Alarmlar"),
+                      trailing: const Icon(Icons.arrow_right),
+                      onTap: () => Navigator.pop(context),
+                    ),
+                    const Divider(
+                      height: 1.0,
+                      color: Colors.indigoAccent,
+                    ),
+                    ListTile(
+                      leading: const Icon(Icons.android),
+                      title: const Text("Uygulamalarımız"),
+                      trailing: const Icon(Icons.arrow_right),
+                      onTap: () => Navigator.pop(context),
+                    ),
+                    const Divider(
+                      height: 1.0,
+                      color: Colors.indigoAccent,
+                    ),
+                      ExpansionTile(
+                      leading: const Icon(Icons.adjust),
+                      title: const Text("Hakkımızda"),
+                      trailing: const Icon(Icons.arrow_right),
+                      children: [
+                        ListTile(
+                          title: const Text("Biz kimiz"),
+                          onTap: () => Navigator.pop(context),
+                        ),
+                        ListTile(
+                          title: const Text("Sertifikalarımız"),
+                          onTap: () => Navigator.pop(context),
+                        ),
+                        ListTile(
+                          title: const Text("Misyonumuz"),
+                          onTap: () => Navigator.pop(context),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
   }
 }
+
+
+
+
+
+
+
+
+

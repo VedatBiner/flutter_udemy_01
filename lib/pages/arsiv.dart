@@ -11,6 +11,7 @@ class ArsivSayfasi extends StatelessWidget{
     return SafeArea(
       child: Center(
         child: GridView.count(
+          physics: const ClampingScrollPhysics(), // menü hareketleri
           primary: false,
           padding: const EdgeInsets.all(20.0),
           crossAxisSpacing: 10.0,
