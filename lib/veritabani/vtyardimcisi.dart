@@ -9,11 +9,10 @@ class VtYardimcisi{
   static final VtYardimcisi _yardimci = VtYardimcisi.icislem();
 
   factory VtYardimcisi() => _yardimci; // RAM 'de yer tutması için oluşturuldu.
-  VtYardimcisi.icislem();
 
   // Hata başlangıcı burayı gösteriyor.
   static late Database _vt; // vt : Veri Tabanı "_" sadece bulunduğu class içinden ulaşım demek
-
+  VtYardimcisi.icislem();
 
   Future<Database> get veritabani async {
     if (_vt != null) return _vt;

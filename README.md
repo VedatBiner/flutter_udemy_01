@@ -127,7 +127,11 @@ Bütün Uygulama fontlarını değiştirince aşağıdaki gibi oldu.\
 ![ScreenShot](/screen_shots/img-37-font-1.png)\
 Aşağıdaki örnekte ise AlertText dosyasındaki "selamla" butonunun fontu değişiyor\
 ![ScreenShot](/screen_shots/img-38-font-2.png)\
-SQLite Uygulaması Eklendi. Ancak hatalar var.
+SQLite Uygulaması Eklendi. Ancak hatalar var.\
+BottomNavigationBar menülerini düzenleyip,statefulwidget haline çevirip, her butona basılışında farklı sayfa gelmesini sağladık.\
+![ScreenShot](/screen_shots/img-39-bottomnavigationbar-1.png)
+![ScreenShot](/screen_shots/img-40-bottomnavigationbar-2.png)
+![ScreenShot](/screen_shots/img-41-bottomnavigationbar-3.png)\
 
 
 
