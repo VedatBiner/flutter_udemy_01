@@ -40,16 +40,31 @@ class ScaffoldState extends State<ScaffoldOgesi> {
             tooltip: "Air it",
             onPressed: () => Navigator.pushNamed(context, "/ilksayfa"),
           ),
-          IconButton(
-            icon: const Icon(Icons.playlist_add),
-            tooltip: "Restrict it",
-            onPressed: () => Navigator.pushNamed(context, "/hello"),
-          ),
-          IconButton(
-            icon: const Icon(Icons.playlist_add_check),
-            tooltip: "Repair it",
-            onPressed: () => Navigator.pushNamed(context, "/degisenwidget"),
-          ),
+         PopupMenuButton(
+           icon: const Icon(Icons.more_vert),
+           itemBuilder: (BuildContext context){
+             return <PopupMenuEntry>[
+               const PopupMenuItem(
+                 child: ListTile(
+                   leading: Icon(Icons.share),
+                   title: Text("Paylaş"),
+                   ),
+               ),
+               const PopupMenuItem(
+                 child: ListTile(
+                   leading: Icon(Icons.star),
+                   title: Text("Puan Ver"),
+                 ),
+               ),
+               const PopupMenuItem(
+                 child: ListTile(
+                   leading: Icon(Icons.contact_phone),
+                   title: Text("İletişim"),
+                 ),
+               ),
+             ];
+           },
+         ),
         ],
       ),
       body: gecerliSayfa(aktifOge),

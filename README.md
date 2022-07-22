@@ -136,7 +136,9 @@ Bu örnekte ise Drawer Menu oluşturuyoruz.\
 Sol üstte Flutter logosu, menü ve alt menü seçenekleri görülüyor.\
 ![ScreenShot](/screen_shots/img-42-drawer-1.png)
 ![ScreenShot](/screen_shots/img-43-drawer-2.png)\
-
+Sağ üst köşede pop up menü oluşturalım.\
+![ScreenShot](/screen_shots/img-44-popup-1.png)
+![ScreenShot](/screen_shots/img-45-popup-2.png)\
 
 
 
