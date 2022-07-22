@@ -127,6 +127,7 @@ Bütün Uygulama fontlarını değiştirince aşağıdaki gibi oldu.\
 ![ScreenShot](/screen_shots/img-37-font-1.png)\
 Aşağıdaki örnekte ise AlertText dosyasındaki "selamla" butonunun fontu değişiyor\
 ![ScreenShot](/screen_shots/img-38-font-2.png)\
+SQLite Uygulaması Eklendi. Ancak hatalar var.
 
 
 
