@@ -37,6 +37,7 @@ class ScaffoldOgesi extends StatelessWidget {
             crossAxisSpacing: 10.0,
             crossAxisCount: 2,
             children: [
+              const AnaCard("/vtanasayfa", "lake.jpg", "Vertabanı İşlemleri Örneği"),
               const AnaCard("/elfeneri", "lake.jpg", "El Feneri Örneği"),
               const AnaCard("/ilksayfa", "lake.jpg", "Tek Tıklama \n İlk sayfaya git"),
               const AnaCard("/imageviews", "lake.jpg", "Çift Tıklama \n ImageViews Sayfasına Git"),
