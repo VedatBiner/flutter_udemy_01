@@ -77,28 +77,32 @@ class ScaffoldState extends State<ScaffoldOgesi> {
       ),
       body: gecerliSayfa(aktifOge),
       bottomNavigationBar: BottomNavigationBar(
-        type: BottomNavigationBarType.fixed,
+        type: BottomNavigationBarType.shifting,
         currentIndex: aktifOge,
-        backgroundColor: Colors.indigo.shade800,
         selectedItemColor: Colors.amberAccent,
         items: const [
           BottomNavigationBarItem(
+            backgroundColor: Colors.indigo,
             icon: Icon(Icons.archive),
             label: "Arşiv",
           ),
           BottomNavigationBarItem(
+            backgroundColor: Colors.indigo,
             icon: Icon(Icons.announcement),
             label: "Bilgilendirme",
           ),
           BottomNavigationBarItem(
+            backgroundColor: Colors.indigo,
             icon: Icon(Icons.assessment),
             label: "Değerlendirme",
           ),
           BottomNavigationBarItem(
+            backgroundColor: Colors.indigo,
             icon: Icon(Icons.wifi),
             label: "Bilgi",
           ),
           BottomNavigationBarItem(
+            backgroundColor: Colors.indigo,
             icon: Icon(Icons.power_settings_new_sharp),
             label: "Değer",
           ),
