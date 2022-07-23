@@ -1,9 +1,8 @@
 import "package:flutter/material.dart";
 import 'package:flutter_udemy_01/pages/arsiv.dart';
-import 'package:fluttertoast/fluttertoast.dart';
 import '../pages/bilgilendirme.dart';
 import '../pages/degerlendirme.dart';
-import '../widgets/ana_card.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class ScaffoldOgesi extends StatefulWidget{
   const ScaffoldOgesi({Key? key}) : super(key: key);
@@ -60,6 +59,12 @@ class ScaffoldState extends State<ScaffoldOgesi> {
                  child: ListTile(
                    leading: Icon(Icons.contact_phone),
                    title: Text("İletişim"),
+                 ),
+               ),
+               const PopupMenuItem(
+                 child: ListTile(
+                   leading: Icon(FontAwesomeIcons.addressBook),
+                   title: Text("Adres"),
                  ),
                ),
              ];

@@ -139,6 +139,9 @@ Sol üstte Flutter logosu, menü ve alt menü seçenekleri görülüyor.\
 Sağ üst köşede pop up menü oluşturalım.\
 ![ScreenShot](/screen_shots/img-44-popup-1.png)
 ![ScreenShot](/screen_shots/img-45-popup-2.png)\
+fontawesome kütüphanesinden ikon ekleyelim.\
+![ScreenShot](/screen_shots/img-46-fontawesome-1.png)\
+
 
 
 
