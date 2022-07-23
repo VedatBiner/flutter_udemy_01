@@ -76,6 +76,30 @@ class ScaffoldState extends State<ScaffoldOgesi> {
         ],
       ),
       body: gecerliSayfa(aktifOge),
+      bottomNavigationBar: BottomAppBar(
+        color: Colors.indigo,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            IconButton(
+              color: Colors.white,
+              onPressed: (){},
+              icon: const Icon(Icons.archive),
+            ),
+            IconButton(
+              color: Colors.white,
+              onPressed: (){},
+              icon: const Icon(Icons.archive),
+            ),
+            IconButton(
+              color: Colors.white,
+              onPressed: (){},
+              icon: const Icon(Icons.archive),
+            ),
+          ],
+        ),
+      ),
+      /*
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.shifting,
         currentIndex: aktifOge,
@@ -113,6 +137,8 @@ class ScaffoldState extends State<ScaffoldOgesi> {
           });
           }
       ),
+
+       */
       drawer: Container(
         margin: const EdgeInsets.only(top: 20.0),
         child: Drawer(

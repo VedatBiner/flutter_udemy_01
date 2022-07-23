@@ -143,7 +143,8 @@ fontawesome kütüphanesinden ikon ekleyelim.\
 ![ScreenShot](/screen_shots/img-46-fontawesome-1.png)\
 BottomNavigationBar için seçenek sayısını atttırıp, renk ve hareket verdik.\
 ![ScreenShot](/screen_shots/img-47-bottomnavigationbar-4.png)\
-
+BottomMapBar ise BottomNavigationBar'a alternatif birkullanımdır.\
+![ScreenShot](/screen_shots/img-48-bottommapbar-1.png)\
 
 
 
