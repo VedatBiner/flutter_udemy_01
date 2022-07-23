@@ -141,6 +141,8 @@ Sağ üst köşede pop up menü oluşturalım.\
 ![ScreenShot](/screen_shots/img-45-popup-2.png)\
 fontawesome kütüphanesinden ikon ekleyelim.\
 ![ScreenShot](/screen_shots/img-46-fontawesome-1.png)\
+BottomNavigationBar için seçenek sayısını atttırıp, renk ve hareket verdik.\
+![ScreenShot](/screen_shots/img-47-bottomnavigationbar-4.png)\
 
 
 

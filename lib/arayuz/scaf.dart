@@ -24,6 +24,9 @@ class ScaffoldState extends State<ScaffoldOgesi> {
       case 2:
         return const DegerlendirmeSayfasi();
         break;
+      default:
+        return const ArsivSayfasi();
+        break;
     }
   }
 
@@ -74,7 +77,10 @@ class ScaffoldState extends State<ScaffoldOgesi> {
       ),
       body: gecerliSayfa(aktifOge),
       bottomNavigationBar: BottomNavigationBar(
+        type: BottomNavigationBarType.fixed,
         currentIndex: aktifOge,
+        backgroundColor: Colors.indigo.shade800,
+        selectedItemColor: Colors.amberAccent,
         items: const [
           BottomNavigationBarItem(
             icon: Icon(Icons.archive),
@@ -87,6 +93,14 @@ class ScaffoldState extends State<ScaffoldOgesi> {
           BottomNavigationBarItem(
             icon: Icon(Icons.assessment),
             label: "Değerlendirme",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.wifi),
+            label: "Bilgi",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.power_settings_new_sharp),
+            label: "Değer",
           ),
         ],
         onTap: (int i) {
