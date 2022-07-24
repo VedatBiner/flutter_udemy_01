@@ -145,6 +145,10 @@ BottomNavigationBar için seçenek sayısını atttırıp, renk ve hareket verdi
 ![ScreenShot](/screen_shots/img-47-bottomnavigationbar-4.png)\
 BottomMapBar ise BottomNavigationBar'a alternatif birkullanımdır.\
 ![ScreenShot](/screen_shots/img-48-bottommapbar-1.png)\
+Snackbar ile alt bölümde mesaj verebiliyoruz.\
+![ScreenShot](/screen_shots/img-49-snackbar.png)\
+
+
 
 
 

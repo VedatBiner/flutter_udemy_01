@@ -8,10 +8,13 @@ class ScaffoldOgesi extends StatefulWidget{
   const ScaffoldOgesi({Key? key}) : super(key: key);
 
   @override
-  State<StatefulWidget> createState() => ScaffoldState();
+  State<StatefulWidget> createState() => ScaffoldStatemiz();
 }
 
-class ScaffoldState extends State<ScaffoldOgesi> {
+class ScaffoldStatemiz extends State<ScaffoldOgesi> {
+
+  final GlobalKey<ScaffoldState> _keyScaffold = GlobalKey<ScaffoldState>();
+
   int aktifOge = 0;
   gecerliSayfa(int aktif){
     switch (aktif){
@@ -30,9 +33,20 @@ class ScaffoldState extends State<ScaffoldOgesi> {
     }
   }
 
+  void _ornekfonksiyon(int i){
+    // Scaffold'a dışarıdan erişim.
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        content: Text("Merhaba snackbar $i"),
+      ),
+    );
+    debugPrint(_keyScaffold.currentState.toString());
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      key: _keyScaffold,
       backgroundColor: Colors.indigo.shade100,
       appBar: AppBar(
         title: const Text("My Fancy Dress"),
@@ -43,28 +57,54 @@ class ScaffoldState extends State<ScaffoldOgesi> {
             onPressed: () => Navigator.pushNamed(context, "/ilksayfa"),
           ),
          PopupMenuButton(
+           onSelected: (secilen){
+             int? s = 0;
+             s = secilen as int?;
+             debugPrint(secilen.toString());
+             switch (secilen){
+               case 0:
+                 _ornekfonksiyon(s!);
+                 break;
+               case 1:
+                 _ornekfonksiyon(s!);
+                 break;
+               case 2:
+                 _ornekfonksiyon(s!);
+                 break;
+               case 3:
+                 _ornekfonksiyon(s!);
+                 break;
+               default:
+                 debugPrint(secilen.toString());
+                 break;
+             }
+           },
            icon: const Icon(Icons.more_vert),
            itemBuilder: (BuildContext context){
              return <PopupMenuEntry>[
                const PopupMenuItem(
+                 value: 0,
                  child: ListTile(
                    leading: Icon(Icons.share),
                    title: Text("Paylaş"),
                    ),
                ),
                const PopupMenuItem(
+                 value: 1,
                  child: ListTile(
                    leading: Icon(Icons.star),
                    title: Text("Puan Ver"),
                  ),
                ),
                const PopupMenuItem(
+                 value: 2,
                  child: ListTile(
                    leading: Icon(Icons.contact_phone),
                    title: Text("İletişim"),
                  ),
                ),
                const PopupMenuItem(
+                 value: 3,
                  child: ListTile(
                    leading: Icon(FontAwesomeIcons.addressBook),
                    title: Text("Adres"),
@@ -76,30 +116,6 @@ class ScaffoldState extends State<ScaffoldOgesi> {
         ],
       ),
       body: gecerliSayfa(aktifOge),
-      bottomNavigationBar: BottomAppBar(
-        color: Colors.indigo,
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            IconButton(
-              color: Colors.white,
-              onPressed: (){},
-              icon: const Icon(Icons.archive),
-            ),
-            IconButton(
-              color: Colors.white,
-              onPressed: (){},
-              icon: const Icon(Icons.archive),
-            ),
-            IconButton(
-              color: Colors.white,
-              onPressed: (){},
-              icon: const Icon(Icons.archive),
-            ),
-          ],
-        ),
-      ),
-      /*
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.shifting,
         currentIndex: aktifOge,
@@ -137,8 +153,6 @@ class ScaffoldState extends State<ScaffoldOgesi> {
           });
           }
       ),
-
-       */
       drawer: Container(
         margin: const EdgeInsets.only(top: 20.0),
         child: Drawer(
