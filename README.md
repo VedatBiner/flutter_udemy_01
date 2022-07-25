@@ -153,6 +153,12 @@ BottomSheet Uygulaması ile alttan açılan menü gösterebiliriz.\
 Navigasyon sırasında değer taşıyalım. Örneğin yeni sayfaya gelince sayfa başlığı, "Ana sayfadan Geldim Olsun"\
 ![ScreenShot](/screen_shots/img-52-valuecarry-1.png)
 ![ScreenShot](/screen_shots/img-53-valuecarry-2.png)\
+TabBar, TabBarController ve TabBarView Kullanımı\
+![ScreenShot](/screen_shots/img-52-valuecarry-1.png)
+![ScreenShot](/screen_shots/img-54-tabbar-1.png)
+![ScreenShot](/screen_shots/img-55-tabbar-2.png)
+![ScreenShot](/screen_shots/img-56-tabbar-3.png)\
+
 
 
 

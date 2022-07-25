@@ -12,12 +12,28 @@ class AppBarSayfasi extends StatefulWidget {
 class _AppBarSayfasiState extends State<AppBarSayfasi> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.gelenDeger != null ? widget.gelenDeger : "App Bar Sayfası"),
-      ),
-      body: Container(
-        color: Colors.teal,
+    return DefaultTabController(
+      length: 3,
+      child: Scaffold(
+        appBar: AppBar(
+          title: Text(
+            widget.gelenDeger != null ? widget.gelenDeger : "App Bar Sayfası"
+          ),
+          bottom: const TabBar(
+            tabs: [
+              Icon(Icons.face),
+              Icon(Icons.add_comment),
+              Icon(Icons.article),
+            ],
+          ),
+        ),
+        body: TabBarView(
+          children: [
+            Container(color: Colors.blue),
+            Container(color: Colors.amber),
+            Container(color: Colors.red),
+          ],
+        ),
       ),
     );
   }
