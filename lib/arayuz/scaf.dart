@@ -43,6 +43,69 @@ class ScaffoldStatemiz extends State<ScaffoldOgesi> {
     debugPrint(_keyScaffold.currentState.toString());
   }
 
+  void ornekBottomSheet(){
+    _keyScaffold.currentState!.showBottomSheet((BuildContext ctx){
+      return Container(
+        height: 250,
+        color: Colors.amberAccent,
+        child: ListView(
+          physics: const ClampingScrollPhysics(),
+          children: [
+            ListTile(
+              leading: const Icon(Icons.place),
+              title: const Text("Yerlerimiz"),
+              trailing: const Icon(Icons.arrow_right),
+              onTap: () => Navigator.pop(context),
+            ),
+            const Divider(
+              height: 1.0,
+              color: Colors.indigoAccent,
+            ),
+            ListTile(
+              leading: const Icon(Icons.access_alarm),
+              title: const Text("Alarmlar"),
+              trailing: const Icon(Icons.arrow_right),
+              onTap: () => Navigator.pop(context),
+            ),
+            const Divider(
+              height: 1.0,
+              color: Colors.indigoAccent,
+            ),
+            ListTile(
+              leading: const Icon(Icons.android),
+              title: const Text("Uygulamalarımız"),
+              trailing: const Icon(Icons.arrow_right),
+              onTap: () => Navigator.pop(context),
+            ),
+            const Divider(
+              height: 1.0,
+              color: Colors.indigoAccent,
+            ),
+            ExpansionTile(
+              leading: const Icon(Icons.adjust),
+              title: const Text("Hakkımızda"),
+              trailing: const Icon(Icons.arrow_right),
+              children: [
+                ListTile(
+                  title: const Text("Biz kimiz"),
+                  onTap: () => Navigator.pop(context),
+                ),
+                ListTile(
+                  title: const Text("Sertifikalarımız"),
+                  onTap: () => Navigator.pop(context),
+                ),
+                ListTile(
+                  title: const Text("Misyonumuz"),
+                  onTap: () => Navigator.pop(context),
+                ),
+              ],
+            ),
+          ],
+        ),
+      );
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -54,7 +117,7 @@ class ScaffoldStatemiz extends State<ScaffoldOgesi> {
           IconButton(
             icon: const Icon(Icons.playlist_play),
             tooltip: "Air it",
-            onPressed: () => Navigator.pushNamed(context, "/ilksayfa"),
+            onPressed: () => ornekBottomSheet(),
           ),
          PopupMenuButton(
            onSelected: (secilen){
