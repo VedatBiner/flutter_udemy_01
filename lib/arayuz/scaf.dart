@@ -244,6 +244,7 @@ class ScaffoldStatemiz extends State<ScaffoldOgesi> {
                       title: const Text("App Bar Sayfası"),
                       trailing: const Icon(Icons.arrow_right),
                       onTap: (){
+                        Navigator.pop(context);
                         Navigator.push(
                           context,
                           MaterialPageRoute(
