@@ -1,5 +1,6 @@
 import "package:flutter/material.dart";
 import 'package:flutter_udemy_01/pages/arsiv.dart';
+import '../pages/appbarsayfasi.dart';
 import '../pages/bilgilendirme.dart';
 import '../pages/degerlendirme.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -240,9 +241,18 @@ class ScaffoldStatemiz extends State<ScaffoldOgesi> {
                   children: [
                     ListTile(
                       leading: const Icon(Icons.place),
-                      title: const Text("Yerlerimiz"),
+                      title: const Text("App Bar Sayfası"),
                       trailing: const Icon(Icons.arrow_right),
-                      onTap: () => Navigator.pop(context),
+                      onTap: (){
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (BuildContext context) => const AppBarSayfasi(
+                              gelenDeger: "Ana Sayfadan Geldim",
+                            ),
+                          ),
+                        );
+                      },
                     ),
                     const Divider(
                       height: 1.0,

@@ -5,6 +5,7 @@ import 'package:flutter_udemy_01/arayuz/elfeneri.dart';
 import 'package:flutter_udemy_01/arayuz/ilksayfa.dart';
 import 'package:flutter_udemy_01/arayuz/imageviews.dart';
 import 'package:flutter_udemy_01/arayuz/scaf.dart';
+import 'package:flutter_udemy_01/pages/appbarsayfasi.dart';
 import 'package:flutter_udemy_01/veritabani/vtanasayfa.dart';
 import 'arayuz/degisenwidget.dart';
 import 'arayuz/hello.dart';
