@@ -149,7 +149,7 @@ Snackbar ile alt bölümde mesaj verebiliyoruz.\
 ![ScreenShot](/screen_shots/img-49-snackbar.png)\
 BottomSheet Uygulaması ile alttan açılan menü gösterebiliriz.\
 ![ScreenShot](/screen_shots/img-50-bottomsheet-1.png)
-![ScreenShot](/screen_shots/img-50-bottomsheet-1.png)\
+![ScreenShot](/screen_shots/img-51-bottomsheet-2.png)\
 
 
 
