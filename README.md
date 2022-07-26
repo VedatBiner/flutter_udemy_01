@@ -158,6 +158,10 @@ TabBar, TabBarController ve TabBarView Kullanımı\
 ![ScreenShot](/screen_shots/img-54-tabbar-1.png)
 ![ScreenShot](/screen_shots/img-55-tabbar-2.png)
 ![ScreenShot](/screen_shots/img-56-tabbar-3.png)\
+Animasyon Örneği\
+bilgi sayfasındaki yazı küçükten büyüğe doğru büyüyerek sürekli hareket ediyor.\
+![ScreenShot](/screen_shots/img-57-animation-1.png)
+![ScreenShot](/screen_shots/img-58-animation-2.png)\
 
 
 
