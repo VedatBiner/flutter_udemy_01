@@ -31,6 +31,7 @@ void main(){
       "/basithttp": (context) => BasitHttp(),
       "/elfeneri": (context) => ElFeneri(),
       "/vtanasayfa": (context) => VtAnasayfa(),
+
     },
     /*
     theme: ThemeData(

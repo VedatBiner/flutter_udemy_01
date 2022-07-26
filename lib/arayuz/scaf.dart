@@ -120,101 +120,101 @@ class ScaffoldStatemiz extends State<ScaffoldOgesi> {
             tooltip: "Air it",
             onPressed: () => ornekBottomSheet(),
           ),
-         PopupMenuButton(
-           onSelected: (secilen){
-             int? s = 0;
-             s = secilen as int?;
-             debugPrint(secilen.toString());
-             switch (secilen){
-               case 0:
-                 _ornekfonksiyon(s!);
-                 break;
-               case 1:
-                 _ornekfonksiyon(s!);
-                 break;
-               case 2:
-                 _ornekfonksiyon(s!);
-                 break;
-               case 3:
-                 _ornekfonksiyon(s!);
-                 break;
-               default:
-                 debugPrint(secilen.toString());
-                 break;
-             }
-           },
-           icon: const Icon(Icons.more_vert),
-           itemBuilder: (BuildContext context){
-             return <PopupMenuEntry>[
-               const PopupMenuItem(
-                 value: 0,
-                 child: ListTile(
-                   leading: Icon(Icons.share),
-                   title: Text("Paylaş"),
-                   ),
-               ),
-               const PopupMenuItem(
-                 value: 1,
-                 child: ListTile(
-                   leading: Icon(Icons.star),
-                   title: Text("Puan Ver"),
-                 ),
-               ),
-               const PopupMenuItem(
-                 value: 2,
-                 child: ListTile(
-                   leading: Icon(Icons.contact_phone),
-                   title: Text("İletişim"),
-                 ),
-               ),
-               const PopupMenuItem(
-                 value: 3,
-                 child: ListTile(
-                   leading: Icon(FontAwesomeIcons.addressBook),
-                   title: Text("Adres"),
-                 ),
-               ),
-             ];
-           },
-         ),
+          PopupMenuButton(
+            onSelected: (secilen){
+              int? s = 0;
+              s = secilen as int?;
+              debugPrint(secilen.toString());
+              switch (secilen){
+                case 0:
+                  _ornekfonksiyon(s!);
+                  break;
+                case 1:
+                  _ornekfonksiyon(s!);
+                  break;
+                case 2:
+                  _ornekfonksiyon(s!);
+                  break;
+                case 3:
+                  _ornekfonksiyon(s!);
+                  break;
+                default:
+                  debugPrint(secilen.toString());
+                  break;
+              }
+            },
+            icon: const Icon(Icons.more_vert),
+            itemBuilder: (BuildContext context){
+              return <PopupMenuEntry>[
+                const PopupMenuItem(
+                  value: 0,
+                  child: ListTile(
+                    leading: Icon(Icons.share),
+                    title: Text("Paylaş"),
+                  ),
+                ),
+                const PopupMenuItem(
+                  value: 1,
+                  child: ListTile(
+                    leading: Icon(Icons.star),
+                    title: Text("Puan Ver"),
+                  ),
+                ),
+                const PopupMenuItem(
+                  value: 2,
+                  child: ListTile(
+                    leading: Icon(Icons.contact_phone),
+                    title: Text("İletişim"),
+                  ),
+                ),
+                const PopupMenuItem(
+                  value: 3,
+                  child: ListTile(
+                    leading: Icon(FontAwesomeIcons.addressBook),
+                    title: Text("Adres"),
+                  ),
+                ),
+              ];
+            },
+          ),
         ],
       ),
       body: gecerliSayfa(aktifOge),
       bottomNavigationBar: BottomNavigationBar(
-        type: BottomNavigationBarType.shifting,
-        currentIndex: aktifOge,
-        selectedItemColor: Colors.amberAccent,
-        items: const [
-          BottomNavigationBarItem(
-            backgroundColor: Colors.indigo,
-            icon: Icon(Icons.archive),
-            label: "Arşiv",
-          ),
-          BottomNavigationBarItem(
-            backgroundColor: Colors.indigo,
-            icon: Icon(Icons.announcement),
-            label: "Bilgilendirme",
-          ),
-          BottomNavigationBarItem(
-            backgroundColor: Colors.indigo,
-            icon: Icon(Icons.assessment),
-            label: "Değerlendirme",
-          ),
-          BottomNavigationBarItem(
-            backgroundColor: Colors.indigo,
-            icon: Icon(Icons.wifi),
-            label: "Bilgi",
-          ),
-          BottomNavigationBarItem(
-            backgroundColor: Colors.indigo,
-            icon: Icon(Icons.power_settings_new_sharp),
-            label: "Değer",
-          ),
-        ],
-        onTap: (int i) {
-          aktifOge = i;
-          setState(() {
-          });
+          type: BottomNavigationBarType.shifting,
+          currentIndex: aktifOge,
+          selectedItemColor: Colors.amberAccent,
+          items: const [
+            BottomNavigationBarItem(
+              backgroundColor: Colors.indigo,
+              icon: Icon(Icons.archive),
+              label: "Arşiv",
+            ),
+            BottomNavigationBarItem(
+              backgroundColor: Colors.indigo,
+              icon: Icon(Icons.announcement),
+              label: "Bilgilendirme",
+            ),
+            BottomNavigationBarItem(
+              backgroundColor: Colors.indigo,
+              icon: Icon(Icons.assessment),
+              label: "Değerlendirme",
+            ),
+            BottomNavigationBarItem(
+              backgroundColor: Colors.indigo,
+              icon: Icon(Icons.wifi),
+              label: "Bilgi",
+            ),
+            BottomNavigationBarItem(
+              backgroundColor: Colors.indigo,
+              icon: Icon(Icons.power_settings_new_sharp),
+              label: "Değer",
+            ),
+          ],
+          onTap: (int i) {
+            aktifOge = i;
+            setState(() {
+            });
           }
       ),
       drawer: Container(
@@ -279,7 +279,7 @@ class ScaffoldStatemiz extends State<ScaffoldOgesi> {
                       height: 1.0,
                       color: Colors.indigoAccent,
                     ),
-                      ExpansionTile(
+                    ExpansionTile(
                       leading: const Icon(Icons.adjust),
                       title: const Text("Hakkımızda"),
                       trailing: const Icon(Icons.arrow_right),
@@ -308,12 +308,4 @@ class ScaffoldStatemiz extends State<ScaffoldOgesi> {
     );
   }
 }
-
-
-
-
-
-
-
-
 

@@ -23,7 +23,7 @@ class Ogrenci{
     map["soyisim"] = _soyisim;
     map["sinif"] = _sinif;
     return map;
-}
+  }
 
   void numaraVer(int no){
     // Öğrenciye numara vermek için bu fonksiyon çağırılacak
@@ -31,4 +31,3 @@ class Ogrenci{
   }
 
 }
-
