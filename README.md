@@ -162,6 +162,7 @@ Animasyon Örneği\
 bilgi sayfasındaki yazı küçükten büyüğe doğru büyüyerek sürekli hareket ediyor.\
 ![ScreenShot](/screen_shots/img-57-animation-1.png)
 ![ScreenShot](/screen_shots/img-58-animation-2.png)\
+Bir başka örnekle ise klp atışı animasyonu yapıldı.\
 
 
 

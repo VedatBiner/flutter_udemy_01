@@ -11,12 +11,66 @@ class BilgilendirmeSayfasi extends StatelessWidget {
       ),
       body: Container(
         color: Colors.greenAccent,
-        child: const Center(
-          child: YaziHareket(),
+        width: double.maxFinite,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const YaziHareket(),
+            KalpAtisi(),
+          ]
         ),
       ),
     );
   }
+}
+
+class KalpAtisi extends StatefulWidget{
+  @override
+  State<StatefulWidget> createState() {
+    return KalpAtisiState();
+  }
+}
+
+class KalpAtisiState extends State<KalpAtisi> with SingleTickerProviderStateMixin{
+
+  late AnimationController _animasyoncu;
+  late Animation<double> _animasyon;
+
+  @override
+  void initState(){
+    super.initState();
+    _animasyoncu = AnimationController(
+        duration: const Duration(seconds: 1),
+        vsync: this,
+    );
+    _animasyon = CurvedAnimation(
+        parent: _animasyoncu,
+        curve: Curves.elasticInOut)
+          ..addListener(() => setState(() {
+            debugPrint(_animasyon.value.toString());
+          }))
+          ..addStatusListener((durum) {
+            debugPrint(durum.toString());
+          });
+        _animasyoncu.repeat();
+  }
+
+  @override
+  void dispose(){
+    _animasyoncu.dispose();
+    super.dispose();
+  }
+
+
+  @override
+  Widget build(BuildContext context) {
+    return Icon(
+      Icons.favorite,
+      color: Colors.red,
+      size: 60.0 + _animasyon.value * 40,
+    );
+  }
+
 }
 
 class YaziHareket extends StatefulWidget {
@@ -56,9 +110,10 @@ class _YaziHareketState extends State<YaziHareket> with SingleTickerProviderStat
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
+      height: 50.0,
       child: Text(
-        "Bilgilendirme Sayfası",
+        "Kalp Atışı Animasyonu",
         style: TextStyle(
           fontSize: 8 + _animation.value * 25,
         ),
