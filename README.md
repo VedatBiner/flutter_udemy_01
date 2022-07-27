@@ -163,7 +163,8 @@ bilgi sayfasındaki yazı küçükten büyüğe doğru büyüyerek sürekli hare
 ![ScreenShot](/screen_shots/img-57-animation-1.png)
 ![ScreenShot](/screen_shots/img-58-animation-2.png)\
 Bir başka örnekle ise klp atışı animasyonu yapıldı.\
-
+Rive.app sitesinden indirilen bir animasyon örneği\
+![ScreenShot](/screen_shots/img-59-rive-1.png)
 
 
 

@@ -41,6 +41,7 @@ dependencies:
   torch_control: ^0.3.0
   sqflite: ^2.0.3
   font_awesome_flutter: ^10.1.0
+  rive: ^0.9.1
 
 dev_dependencies:
   flutter_test:
@@ -73,6 +74,7 @@ flutter:
     - assets/veriler/sinif.json
     - assets/images/ampul-off.png
     - assets/images/ampul-on.png
+    - assets/animations/robot-x.riv
 
   fonts:
     - family: badscript
